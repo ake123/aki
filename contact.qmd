@@ -1,0 +1,19 @@
+---
+title: "Contact"
+description: "Contact Akewak Jeba for research, data science, software, and collaboration."
+---
+
+::: {.page-intro}
+I’m happy to hear about **research collaborations, data science projects, open-source software, AI-assisted research workflows, and technical opportunities**.
+:::
+
+## Get in touch
+
+- **Email:** [akewak84@gmail.com](mailto:akewak84@gmail.com)
+- **GitHub:** [github.com/ake123](https://github.com/ake123)
+- **LinkedIn:** [Akewak Jeba](https://www.linkedin.com/in/akewak-j-ab82b528/)
+- **University profile:** [University of Turku](https://www.utu.fi/en/people/akewak-jeba)
+
+## What I work on
+
+Data science · Machine learning · AI/LLMs · R/Python · Scientific software · Cultural heritage data · Bioinformatics · Reproducible workflows · APIs · Research infrastructure

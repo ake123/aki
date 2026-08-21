@@ -1,0 +1,114 @@
+---
+title: "Akewak Jeba"
+page-layout: full
+toc: false
+---
+
+```{=html}
+<section class="hero-shell">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="pulse-dot"></span> Data science · AI · Open science</div>
+      <h1 class="hero-title">I build <span class="gradient-text">research tools</span> that turn complex data into usable knowledge.</h1>
+      <p class="hero-lead">I’m Akewak Jeba, a data scientist and scientific software developer at the intersection of artificial intelligence, cultural heritage, computational biology, and reproducible research.</p>
+      <p class="terminal-line">$ whoami → <strong id="terminal-role">data scientist</strong><span class="terminal-cursor">_</span></p>
+      <div class="hero-actions">
+        <a class="aj-btn aj-btn-primary" href="projects.html">Explore projects <span aria-hidden="true">→</span></a>
+        <a class="aj-btn aj-btn-secondary" href="cv/akewak-jeba-cv.pdf" target="_blank">View CV ↗</a>
+        <a class="aj-btn aj-btn-secondary" href="contact.html">Contact me</a>
+      </div>
+    </div>
+    <div class="profile-orbit" aria-label="Akewak Jeba profile">
+      <img class="profile-photo" src="images/ake.jpeg" alt="Akewak Jeba">
+      <span class="orbit-chip">R · Python</span>
+      <span class="orbit-chip">AI + Research</span>
+      <span class="orbit-chip">Open Source</span>
+    </div>
+  </div>
+
+  <div class="metric-grid reveal" aria-label="Live portfolio metrics">
+    <div class="metric-card"><span class="metric-value">4×</span><span class="metric-label">automated refreshes each day</span></div>
+    <div class="metric-card"><span class="metric-value" data-live="repos">—</span><span class="metric-label">public GitHub repositories</span></div>
+    <div class="metric-card"><span class="metric-value" data-live="followers">—</span><span class="metric-label">GitHub followers</span></div>
+    <div class="metric-card"><span class="metric-value" data-live="refresh">loading…</span><span class="metric-label">last automated refresh</span></div>
+  </div>
+</section>
+
+<section class="section-shell reveal">
+  <div class="section-kicker">What I do</div>
+  <h2 class="section-title">Research engineering from data access to reproducible analysis.</h2>
+  <p class="section-copy">My work combines statistical computing, machine learning, APIs, software engineering, and open research infrastructure. I focus on making complex datasets easier to retrieve, analyze, validate, and reuse.</p>
+  <div class="focus-grid">
+    <article class="focus-card">
+      <div class="focus-icon">◈</div>
+      <h3>AI-assisted research</h3>
+      <p>Designing workflows where AI supports data retrieval, transformation, statistical analysis, visualization, and reproducible reporting while keeping decisions inspectable.</p>
+    </article>
+    <article class="focus-card">
+      <div class="focus-icon">⌘</div>
+      <h3>Scientific software</h3>
+      <p>Building open-source R tooling and data pipelines for cultural heritage metadata, bibliographic data, omics, and interactive analysis.</p>
+    </article>
+    <article class="focus-card">
+      <div class="focus-icon">◎</div>
+      <h3>Reproducible data science</h3>
+      <p>Connecting APIs, structured metadata, statistical methods, CI/CD, documentation, and scalable computing into research workflows that others can rerun.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section-shell reveal">
+  <div class="section-kicker">Selected work</div>
+  <h2 class="section-title">Open tools and research projects.</h2>
+  <div class="project-grid">
+    <article class="project-card">
+      <span class="project-tag">Cultural heritage</span>
+      <h3>finna</h3>
+      <p>An R interface for programmatic access to the Finna API, enabling reproducible retrieval and analysis of Finnish library, archive, and museum metadata.</p>
+      <div class="project-links"><a href="https://fennicahub.github.io/finna" target="_blank">Documentation ↗</a><a href="https://github.com/fennicahub/finna" target="_blank">Source ↗</a></div>
+    </article>
+    <article class="project-card">
+      <span class="project-tag">Linked data</span>
+      <h3>finto</h3>
+      <p>Tools for working with Finnish ontology and vocabulary services, supporting concept search, semantic enrichment, and multilingual cultural heritage workflows.</p>
+      <div class="project-links"><a href="projects.html">Project details →</a></div>
+    </article>
+    <article class="project-card">
+      <span class="project-tag">Bibliographic data</span>
+      <h3>fennica</h3>
+      <p>Computational access and analysis workflows for Finnish national bibliography data, supporting large-scale studies of publishing and literary history.</p>
+      <div class="project-links"><a href="projects.html">Project details →</a></div>
+    </article>
+    <article class="project-card">
+      <span class="project-tag">Bioinformatics</span>
+      <h3>LimROTS + iSEEtree</h3>
+      <p>Contributions to statistical and interactive tools for robust differential expression analysis and exploration of hierarchical biological data.</p>
+      <div class="project-links"><a href="Publications.html">Publications →</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="section-shell reveal">
+  <div class="section-kicker">Live GitHub</div>
+  <h2 class="section-title">Repository activity, refreshed automatically.</h2>
+  <p class="section-copy">A scheduled GitHub Action refreshes this portfolio four times per day, records the update in version control, and republishes the site. The cards below are populated from the latest public GitHub data.</p>
+  <div id="live-repo-grid" class="live-repo-grid">
+    <div class="repo-card"><div class="repo-card-top"><span class="repo-name">Loading GitHub activity…</span></div><p>Live repository information will appear here.</p></div>
+  </div>
+</section>
+
+<section class="section-shell reveal">
+  <div class="section-kicker">Toolbox</div>
+  <h2 class="section-title">Technologies I use to ship research.</h2>
+  <div class="skill-cloud">
+    <span class="skill-pill">R</span><span class="skill-pill">Python</span><span class="skill-pill">SQL</span><span class="skill-pill">Quarto</span><span class="skill-pill">Shiny</span><span class="skill-pill">Machine Learning</span><span class="skill-pill">LLMs</span><span class="skill-pill">NLP</span><span class="skill-pill">Docker</span><span class="skill-pill">GitHub Actions</span><span class="skill-pill">Linux</span><span class="skill-pill">HPC</span><span class="skill-pill">AWS</span><span class="skill-pill">APIs</span><span class="skill-pill">PostgreSQL</span><span class="skill-pill">JavaScript</span>
+  </div>
+</section>
+
+<section class="section-shell reveal">
+  <div class="cta-panel">
+    <div><h2>Interested in research, data, or scientific software?</h2><p>I’m always interested in useful collaborations where rigorous data science and good software engineering meet.</p></div>
+    <a class="aj-btn aj-btn-primary" href="contact.html">Start a conversation →</a>
+  </div>
+</section>
+```
