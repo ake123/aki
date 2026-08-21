@@ -1,0 +1,198 @@
+[
+  {
+    "objectID": "Publications.html",
+    "href": "Publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Selected peer-reviewed publications and research software spanning cultural heritage data science, bioinformatics, statistical computing, and interactive analysis."
+  },
+  {
+    "objectID": "Publications.html#peer-reviewed-articles",
+    "href": "Publications.html#peer-reviewed-articles",
+    "title": "Publications",
+    "section": "Peer-reviewed articles",
+    "text": "Peer-reviewed articles\n\nAutomated Retrieval and Analysis of Finnish Cultural Metadata with finna (2026)\nAkewak Jeba, Julia Matveeva, Leo Lahti · Data Science Journal, 25(1).\nA reproducible software and workflow contribution for retrieving and analyzing large-scale Finnish cultural heritage metadata through the Finna API.\n\nArticle finna documentation\n\n\n\nLimROTS: a hybrid method integrating empirical Bayes and reproducibility-optimized statistics for robust differential expression analysis (2025)\nAli Mostafa Anwar, Akewak Jeba, Leo Lahti, Eleanor Coffey · Bioinformatics, 41(12), btaf570.\n\nDOI Bioconductor\n\n\n\niSEEtree: interactive explorer for hierarchical data (2025)\nGiulio Benedetti, Ely Seraidarian, Theotime Pralas, Akewak Jeba, Tuomas Borman, Leo Lahti · Bioinformatics Advances, 5(1), vbaf107.\n\nDOI PubMed"
+  },
+  {
+    "objectID": "Publications.html#scientific-software",
+    "href": "Publications.html#scientific-software",
+    "title": "Publications",
+    "section": "Scientific software",
+    "text": "Scientific software\n\nfinna — R client for the Finna API and cultural heritage metadata workflows.\nLimROTS — Bioconductor package for robust differential expression analysis.\niSEEtree — interactive exploration of hierarchical biological data."
+  },
+  {
+    "objectID": "Publications.html#theses",
+    "href": "Publications.html#theses",
+    "title": "Publications",
+    "section": "Theses",
+    "text": "Theses\n\nMSc, Computer Science (2021): Using Principal Component Analysis to Determine Changes in Mechanical Properties\nBEng, Information Technology (2011): Digital Image Processing and Image Restoration"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Writing",
+    "section": "",
+    "text": "Longer notes from ongoing work in data science, cultural heritage computing, scientific software, machine learning, and reproducible research.\n\n\n\n\n\n\n\n\n\n\n\n\n\nTracing the Evolution of Knowledge Through Bibliographic Data Science\n\n\n\nR\n\ncultural-heritage\n\nfinna\n\nBiblographic datascience\n\n\n\n\n\n\n\nJul 3, 2025\n\n\n\n\n\n\n\n\n\n\n\nLimROTS: A New Tool for Reliable Differential Expression Analysis in Proteomics\n\n\n\nr\n\ncultural-heritage\n\nfinna\n\n\n\n\n\n\n\nJun 3, 2025\n\n\n\n\n\n\n\n\n\n\n\nBuilding the Foundation for Our eCommerce Platform\n\n\n\neCommerce\n\nDrupal\n\nWeb Development\n\n\n\nA behind-the-scenes look at our scalable, flexible eCommerce project\n\n\n\nMay 3, 2025\n\n\n\n\n\n\n\n\n\n\n\nGraph Learning for Microbiome Research\n\n\n\nmicrobiome\n\nmachine-learning\n\ngraph\n\n\n\n\n\n\n\nApr 27, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I’m happy to hear about research collaborations, data science projects, open-source software, AI-assisted research workflows, and technical opportunities."
+  },
+  {
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Contact",
+    "section": "Get in touch",
+    "text": "Get in touch\n\nEmail: akewak84@gmail.com\nGitHub: github.com/ake123\nLinkedIn: Akewak Jeba\nUniversity profile: University of Turku"
+  },
+  {
+    "objectID": "contact.html#what-i-work-on",
+    "href": "contact.html#what-i-work-on",
+    "title": "Contact",
+    "section": "What I work on",
+    "text": "What I work on\nData science · Machine learning · AI/LLMs · R/Python · Scientific software · Cultural heritage data · Bioinformatics · Reproducible workflows · APIs · Research infrastructure"
+  },
+  {
+    "objectID": "posts/eCommerce.html",
+    "href": "posts/eCommerce.html",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "",
+    "text": "In today’s digital economy, having a seamless, scalable, and secure eCommerce platform isn’t just a luxury—it’s essential. Our latest project is all about building a complete, end-to-end eCommerce solution that empowers businesses and customers with an effortless online shopping experience.\nIn this post, I’ll walk you through what we’re building, how we’re approaching it, and the technologies driving this project.\n\n\n\nThe need for reliable eCommerce infrastructure continues to grow, especially for independent brands, local businesses, and specialized products. Our project is designed to:\n\n✅ Provide a flexible, customizable online storefront\n\n✅ Integrate secure payment systems with minimal friction\n\n✅ Support product catalogs, order management, and user accounts\n\n✅ Ensure SEO-friendly URLs, efficient performance, and mobile responsiveness\n\n✅ Lay the groundwork for future enhancements like analytics, marketing automation, and multilingual support\n\nWe’re not just building another webshop—we’re building a platform ready to grow with your business.\n\n\n\n\nBehind the scenes, we’re combining proven tools and modern development practices to create a robust, maintainable system:\n🔧 Key Technologies\n\nDrupal Commerce — The core of our storefront, combining content management with commerce functionality\n\nPathauto & URL Aliases — Automating clean, SEO-friendly URLs for products, stores, and more\n\nCustom Backend Features — Product management, order workflows, and future extensibility\n\nPayment Gateway Integration — Secure, flexible transactions with multiple provider support\n\nResponsive Frontend — Optimized across devices, ensuring a great mobile and desktop experience\n\n💻 Development Best Practices\n\nVersion control with Git\n\nAutomated deployments\n\nContainerization with Docker\n\nModular, scalable code structure\n\n\n\n\n\nWe’ve already achieved some major milestones:\n✅ Drupal Commerce setup and configuration\n✅ Product catalog structure established\n✅ URL aliases generated for products, stores, and key content\n✅ Admin workflows optimized for store managers\n✅ Local development and testing environments configured\nNext Steps\n\n🚀 Frontend polishing for a branded, intuitive storefront\n\n🛠️ Extending order processing and payment features\n\n📈 Adding analytics and performance monitoring\n\n🔒 Security enhancements and GDPR compliance\n\n\n\n\n\nOur long-term vision goes beyond transactions. We’re creating an eCommerce platform focused on building relationships:\n\nPersonalized shopping experiences\n\nMarketing tool integration\n\nSocial sharing and community engagement\n\nScalable architecture for future growth\n\nWe believe eCommerce should connect brands with their audience, not just process orders.\n\n\n\n\nThis project reflects our team’s commitment to delivering high-quality, tailored eCommerce solutions that adapt to real-world needs.\nStay tuned for more updates as we bring this platform to life.\nInterested in collaborating or sharing feedback? Don’t hesitate to reach out!"
+  },
+  {
+    "objectID": "posts/eCommerce.html#why-this-project",
+    "href": "posts/eCommerce.html#why-this-project",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "",
+    "text": "The need for reliable eCommerce infrastructure continues to grow, especially for independent brands, local businesses, and specialized products. Our project is designed to:\n\n✅ Provide a flexible, customizable online storefront\n\n✅ Integrate secure payment systems with minimal friction\n\n✅ Support product catalogs, order management, and user accounts\n\n✅ Ensure SEO-friendly URLs, efficient performance, and mobile responsiveness\n\n✅ Lay the groundwork for future enhancements like analytics, marketing automation, and multilingual support\n\nWe’re not just building another webshop—we’re building a platform ready to grow with your business."
+  },
+  {
+    "objectID": "posts/eCommerce.html#the-tech-stack-powering-our-ecommerce-vision",
+    "href": "posts/eCommerce.html#the-tech-stack-powering-our-ecommerce-vision",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "",
+    "text": "Behind the scenes, we’re combining proven tools and modern development practices to create a robust, maintainable system:\n🔧 Key Technologies\n\nDrupal Commerce — The core of our storefront, combining content management with commerce functionality\n\nPathauto & URL Aliases — Automating clean, SEO-friendly URLs for products, stores, and more\n\nCustom Backend Features — Product management, order workflows, and future extensibility\n\nPayment Gateway Integration — Secure, flexible transactions with multiple provider support\n\nResponsive Frontend — Optimized across devices, ensuring a great mobile and desktop experience\n\n💻 Development Best Practices\n\nVersion control with Git\n\nAutomated deployments\n\nContainerization with Docker\n\nModular, scalable code structure"
+  },
+  {
+    "objectID": "posts/eCommerce.html#progress-so-far",
+    "href": "posts/eCommerce.html#progress-so-far",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "",
+    "text": "We’ve already achieved some major milestones:\n✅ Drupal Commerce setup and configuration\n✅ Product catalog structure established\n✅ URL aliases generated for products, stores, and key content\n✅ Admin workflows optimized for store managers\n✅ Local development and testing environments configured\nNext Steps\n\n🚀 Frontend polishing for a branded, intuitive storefront\n\n🛠️ Extending order processing and payment features\n\n📈 Adding analytics and performance monitoring\n\n🔒 Security enhancements and GDPR compliance"
+  },
+  {
+    "objectID": "posts/eCommerce.html#looking-ahead",
+    "href": "posts/eCommerce.html#looking-ahead",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "",
+    "text": "Our long-term vision goes beyond transactions. We’re creating an eCommerce platform focused on building relationships:\n\nPersonalized shopping experiences\n\nMarketing tool integration\n\nSocial sharing and community engagement\n\nScalable architecture for future growth\n\nWe believe eCommerce should connect brands with their audience, not just process orders."
+  },
+  {
+    "objectID": "posts/eCommerce.html#final-thoughts",
+    "href": "posts/eCommerce.html#final-thoughts",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "",
+    "text": "This project reflects our team’s commitment to delivering high-quality, tailored eCommerce solutions that adapt to real-world needs.\nStay tuned for more updates as we bring this platform to life.\nInterested in collaborating or sharing feedback? Don’t hesitate to reach out!"
+  },
+  {
+    "objectID": "posts/microbiome-graph-learning.html",
+    "href": "posts/microbiome-graph-learning.html",
+    "title": "Graph Learning for Microbiome Research",
+    "section": "",
+    "text": "Can we model microbial interactions as graphs? Absolutely.\nIn this post, I explore the idea of using Graph Neural Networks (GNNs) to study microbiome dynamics.\n\nNodes: microbial taxa\nEdges: co-occurrence or correlation\nFeatures: abundance, function, location\n\nUsing libraries like torch and igraph, this can reveal community structure and functional roles.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "My projects focus on reproducible data access, scientific software, machine learning, and research infrastructure. I especially enjoy building the layer between difficult source systems and researchers who need clean, analyzable data."
+  },
+  {
+    "objectID": "projects.html#cultural-heritage-bibliographic-data",
+    "href": "projects.html#cultural-heritage-bibliographic-data",
+    "title": "Projects",
+    "section": "Cultural heritage & bibliographic data",
+    "text": "Cultural heritage & bibliographic data\n\nfinna — Finna API for R\nAn open-source R package for retrieving and analyzing cultural heritage metadata from Finland’s Finna service. It provides reproducible access to records from libraries, museums, archives, and other cultural heritage organizations.\nFocus: API clients · metadata retrieval · reproducible workflows · digital humanities\nDocumentation GitHub\n\n\nfinto — Semantic vocabularies and ontologies\nR tooling for accessing Finnish vocabulary and ontology services. The work supports concept lookup, multilingual metadata enrichment, semantic search, and the use of controlled vocabularies in computational research.\nFocus: linked data · ontologies · multilingual metadata · semantic enrichment\n\n\nfennica — Finnish national bibliography workflows\nTools and analysis workflows for working with Finnish national bibliography data at scale, including harmonization and computational analysis of historical publication metadata.\nFocus: bibliographic data science · metadata harmonization · cultural history · R"
+  },
+  {
+    "objectID": "projects.html#computational-biology",
+    "href": "projects.html#computational-biology",
+    "title": "Projects",
+    "section": "Computational biology",
+    "text": "Computational biology\n\nLimROTS\nA hybrid statistical method and Bioconductor package that combines empirical Bayes modeling with reproducibility-optimized statistics for robust differential expression analysis.\nFocus: statistical programming · proteomics · Bioconductor · reproducibility\nBioconductor\n\n\niSEEtree\nAn interactive explorer for hierarchical biological data, developed as part of a collaborative scientific software project.\nFocus: interactive analysis · visualization · hierarchical data · Bioconductor"
+  },
+  {
+    "objectID": "projects.html#research-engineering",
+    "href": "projects.html#research-engineering",
+    "title": "Projects",
+    "section": "Research engineering",
+    "text": "Research engineering\n\nAI-assisted reproducible analysis\nMethodological work exploring how AI systems can help researchers construct transparent computational workflows across data retrieval, cleaning, variable construction, statistical analysis, visualization, and reporting.\nFocus: AI agents · reproducibility · evaluation · statistical workflows · provenance"
+  },
+  {
+    "objectID": "posts/LimROTS.html",
+    "href": "posts/LimROTS.html",
+    "title": "LimROTS: A New Tool for Reliable Differential Expression Analysis in Proteomics",
+    "section": "",
+    "text": "Differential expression analysis is at the heart of modern omics research, helping scientists pinpoint proteins or genes that distinguish one condition from another, such as disease versus healthy states. However, analyzing complex proteomics datasets remains challenging, especially when experiments include technical variation, batch effects, or biological covariates like age and sex.\nTo address these challenges, our team developed LimROTS, an R/Bioconductor package that combines two powerful statistical approaches: the flexible linear modeling and empirical Bayes method from limma, and the reproducibility-optimized ranking from ROTS. This hybrid design allows LimROTS to handle complex experimental designs while improving the reliability of differential expression results.\nIn rigorous benchmarking using 21 gold standard proteomics datasets, LimROTS consistently outperformed widely used tools such as limma, ROTS, MSstats, DEqMS, DEP, SAM, ANOVA, and t-tests. We also tested LimROTS on real-world clinical data from Alzheimer’s disease patients. The method identified biologically meaningful protein changes with improved precision, even in the presence of technical variability.\nLimROTS is openly available through Bioconductor and is designed to integrate seamlessly with existing omics workflows. Its ability to manage complex designs and enhance reproducibility makes it a promising tool not only for proteomics but potentially for transcriptomics and metabolomics as well.\nExplore LimROTS at: https://bioconductor.org/packages/LimROTS\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "posts/Bibliographic_Data_Science.html",
+    "href": "posts/Bibliographic_Data_Science.html",
+    "title": "Tracing the Evolution of Knowledge Through Bibliographic Data Science",
+    "section": "",
+    "text": "The transformation of European book culture between 1500 and 1800 offers a remarkable window into the evolution of knowledge, language, and public discourse. Our ongoing research addresses this transformation by combining large-scale bibliographic metadata with systematic data analysis, building upon national bibliographies and extensive catalog collections.\nAt the heart of this work lies the concept of bibliographic data science: applying reproducible, quantitative methods to understand long-term publishing trends. By integrating millions of records from national libraries—including the Finnish and Swedish bibliographies, the English Short-Title Catalogue (ESTC), and the Heritage of the Printed Book Database—we are creating an unprecedented foundation for historical research across Europe.\nThe scale of this project requires meticulous harmonisation of metadata, from standardising publication places and document formats to enriching missing information with external sources. This process enables researchers to trace the spread of publishing centres, the rise of vernacular languages, and material aspects such as book formats or paper consumption.\nFor example, our studies reveal how Finnish book production, which began modestly in Turku in 1640, expanded steadily during the Grand Duchy era under Russian rule. Similarly, we observe the significant role of octavo-format books in the 18th century, reflecting broader shifts toward portability and access to printed material. These developments were not isolated—they unfolded alongside major political and cultural changes, such as the introduction of freedom of print in Sweden (1766) or the foundation of universities across the region.\nBeyond quantifying publication trends, our research addresses structural challenges in the bibliographical landscape. National bibliographies have traditionally operated within fragmented standards and cataloguing practices. By promoting open data, systematic quality monitoring, and shared analytical tools, we aim to create a more integrated, collaborative infrastructure that benefits both historical research and cultural heritage preservation.\nThis work contributes to the broader discussion on how digital resources, when handled with careful methodological control, can illuminate overlooked historical processes. It complements more qualitative scholarship by providing large-scale, verifiable perspectives on knowledge production—whether in early modern Europe or future global research efforts.\nFor more information, see publications from the Helsinki Computational History Group or the collaborative work within DARIAH’s Bibliodata Working Group, which continues to advance shared agendas for research infrastructures and public data stakeholders.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "GITHUB-ACTIONS-SETUP.html",
+    "href": "GITHUB-ACTIONS-SETUP.html",
+    "title": "GitHub Actions workflow",
+    "section": "",
+    "text": "The actual GitHub Actions workflow is here:\n.github/workflows/daily-git-commits.yml\nThe .github folder is a hidden folder on macOS/Linux because its name begins with a dot.\n\n\nIn Finder press:\nCommand + Shift + .\nThat toggles hidden files and folders on/off.\n\n\n\n\nRuns 4 times every day at 03:17, 09:17, 15:17, and 21:17 Europe/Helsinki time.\nRuns scripts/update_site_pulse.py.\nUpdates data/site-pulse.json with a new timestamp and current GitHub portfolio data.\nCommits that changed file to the master branch.\nPushes the commit to GitHub.\nRenders the Quarto website.\nPublishes the rendered website to gh-pages.\n\n\n\n\nAfter pushing this project to GitHub:\n\nOpen the repository.\nClick Actions.\nSelect Daily Git commits and portfolio deploy.\nClick Run workflow.\nChoose the master branch and run it.\nOpen the repository commit history and verify that a new chore(portfolio): automated refresh ... commit appears.\n\n\n\n\nThe workflow must remain under .github/workflows/. A YAML file elsewhere in the repository is not recognized as a GitHub Actions workflow."
+  },
+  {
+    "objectID": "GITHUB-ACTIONS-SETUP.html#show-it-on-macos",
+    "href": "GITHUB-ACTIONS-SETUP.html#show-it-on-macos",
+    "title": "GitHub Actions workflow",
+    "section": "",
+    "text": "In Finder press:\nCommand + Shift + .\nThat toggles hidden files and folders on/off."
+  },
+  {
+    "objectID": "GITHUB-ACTIONS-SETUP.html#what-the-workflow-does",
+    "href": "GITHUB-ACTIONS-SETUP.html#what-the-workflow-does",
+    "title": "GitHub Actions workflow",
+    "section": "",
+    "text": "Runs 4 times every day at 03:17, 09:17, 15:17, and 21:17 Europe/Helsinki time.\nRuns scripts/update_site_pulse.py.\nUpdates data/site-pulse.json with a new timestamp and current GitHub portfolio data.\nCommits that changed file to the master branch.\nPushes the commit to GitHub.\nRenders the Quarto website.\nPublishes the rendered website to gh-pages."
+  },
+  {
+    "objectID": "GITHUB-ACTIONS-SETUP.html#first-test-on-github",
+    "href": "GITHUB-ACTIONS-SETUP.html#first-test-on-github",
+    "title": "GitHub Actions workflow",
+    "section": "",
+    "text": "After pushing this project to GitHub:\n\nOpen the repository.\nClick Actions.\nSelect Daily Git commits and portfolio deploy.\nClick Run workflow.\nChoose the master branch and run it.\nOpen the repository commit history and verify that a new chore(portfolio): automated refresh ... commit appears."
+  },
+  {
+    "objectID": "GITHUB-ACTIONS-SETUP.html#important",
+    "href": "GITHUB-ACTIONS-SETUP.html#important",
+    "title": "GitHub Actions workflow",
+    "section": "",
+    "text": "The workflow must remain under .github/workflows/. A YAML file elsewhere in the repository is not recognized as a GitHub Actions workflow."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Akewak Jeba",
+    "section": "",
+    "text": "Data science · AI · Open science\n      I build research tools that turn complex data into usable knowledge.\n      I’m Akewak Jeba, a data scientist and scientific software developer at the intersection of artificial intelligence, cultural heritage, computational biology, and reproducible research.\n      $ whoami → data scientist_\n      \n        Explore projects →\n        View CV ↗\n        Contact me\n      \n    \n    \n      \n      R · Python\n      AI + Research\n      Open Source\n    \n  \n\n  \n    4×automated refreshes each day\n    —public GitHub repositories\n    —GitHub followers\n    loading…last automated refresh\n  \n\n\n\n  What I do\n  Research engineering from data access to reproducible analysis.\n  My work combines statistical computing, machine learning, APIs, software engineering, and open research infrastructure. I focus on making complex datasets easier to retrieve, analyze, validate, and reuse.\n  \n    \n      ◈\n      AI-assisted research\n      Designing workflows where AI supports data retrieval, transformation, statistical analysis, visualization, and reproducible reporting while keeping decisions inspectable.\n    \n    \n      ⌘\n      Scientific software\n      Building open-source R tooling and data pipelines for cultural heritage metadata, bibliographic data, omics, and interactive analysis.\n    \n    \n      ◎\n      Reproducible data science\n      Connecting APIs, structured metadata, statistical methods, CI/CD, documentation, and scalable computing into research workflows that others can rerun.\n    \n  \n\n\n\n  Selected work\n  Open tools and research projects.\n  \n    \n      Cultural heritage\n      finna\n      An R interface for programmatic access to the Finna API, enabling reproducible retrieval and analysis of Finnish library, archive, and museum metadata.\n      Documentation ↗Source ↗\n    \n    \n      Linked data\n      finto\n      Tools for working with Finnish ontology and vocabulary services, supporting concept search, semantic enrichment, and multilingual cultural heritage workflows.\n      Project details →\n    \n    \n      Bibliographic data\n      fennica\n      Computational access and analysis workflows for Finnish national bibliography data, supporting large-scale studies of publishing and literary history.\n      Project details →\n    \n    \n      Bioinformatics\n      LimROTS + iSEEtree\n      Contributions to statistical and interactive tools for robust differential expression analysis and exploration of hierarchical biological data.\n      Publications →\n    \n  \n\n\n\n  Live GitHub\n  Repository activity, refreshed automatically.\n  A scheduled GitHub Action refreshes this portfolio four times per day, records the update in version control, and republishes the site. The cards below are populated from the latest public GitHub data.\n  \n    Loading GitHub activity…Live repository information will appear here.\n  \n\n\n\n  Toolbox\n  Technologies I use to ship research.\n  \n    RPythonSQLQuartoShinyMachine LearningLLMsNLPDockerGitHub ActionsLinuxHPCAWSAPIsPostgreSQLJavaScript\n  \n\n\n\n  \n    Interested in research, data, or scientific software?I’m always interested in useful collaborations where rigorous data science and good software engineering meet.\n    Start a conversation →\n  \n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Resume.html",
+    "href": "Resume.html",
+    "title": "CV",
+    "section": "",
+    "text": "For the best reading experience, open the PDF directly or view it below.\n\nOpen CV as PDF\n\n\n\n\n\n Back to top"
+  }
+]
