@@ -16,7 +16,7 @@ A Quarto-based personal research portfolio with a live GitHub activity layer and
 
 The workflow runs at **03:17, 09:17, 15:17, and 21:17 Europe/Helsinki time**. GitHub handles daylight-saving changes through the workflow timezone setting.
 
-GitHub Actions cron is defined in `.github/workflows/quarto-gh-pages.yml`.
+GitHub Actions cron is defined in `.github/workflows/daily-git-commits.yml`.
 
 ## Contribution attribution
 
