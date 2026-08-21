@@ -1,16 +1,71 @@
 {
-  "last_updated_utc": "2026-08-20T19:15:00Z",
-  "last_updated_helsinki": "2026-08-20T22:15:00+03:00",
-  "refresh_number": 0,
-  "refresh_slot_utc": "bootstrap",
-  "api_status": "bootstrap",
+  "last_updated_utc": "2026-08-21T08:34:39Z",
+  "last_updated_helsinki": "2026-08-21T11:34:39+03:00",
+  "refresh_number": 3,
+  "refresh_slot_utc": "08:34",
+  "api_status": "ok",
   "github": {
     "login": "ake123",
-    "name": "Akewak Jeba",
-    "followers": null,
-    "public_repos": null,
+    "name": "ake",
+    "followers": 5,
+    "public_repos": 122,
     "profile_url": "https://github.com/ake123",
-    "profile_updated_at": null
+    "profile_updated_at": "2026-08-05T10:32:14Z"
   },
-  "repositories": []
+  "repositories": [
+    {
+      "name": "aki",
+      "description": "https://ake123.github.io/aki/",
+      "url": "https://github.com/ake123/aki",
+      "language": "CSS",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-21T08:05:05Z"
+    },
+    {
+      "name": "ake123",
+      "description": "Open-source project",
+      "url": "https://github.com/ake123/ake123",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-21T06:54:28Z"
+    },
+    {
+      "name": "ai-product-studio",
+      "description": "Open-source project",
+      "url": "https://github.com/ake123/ai-product-studio",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-07-31T19:32:30Z"
+    },
+    {
+      "name": "finna-analysis-book",
+      "description": "https://ake123.github.io/finna-analysis-book/",
+      "url": "https://github.com/ake123/finna-analysis-book",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-07-30T19:43:25Z"
+    },
+    {
+      "name": "Automated-Retrieval-and-Analysis-of-Finnish-Cultural-Metadata-with-finna",
+      "description": "Open-source project",
+      "url": "https://github.com/ake123/Automated-Retrieval-and-Analysis-of-Finnish-Cultural-Metadata-with-finna",
+      "language": "R",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-07-30T19:03:15Z"
+    },
+    {
+      "name": "QR_code",
+      "description": "Open-source project",
+      "url": "https://github.com/ake123/QR_code",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2025-10-24T13:46:10Z"
+    }
+  ]
 }
