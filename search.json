@@ -149,37 +149,44 @@
   {
     "objectID": "GITHUB-ACTIONS-SETUP.html",
     "href": "GITHUB-ACTIONS-SETUP.html",
-    "title": "GitHub Actions workflow",
+    "title": "Akewak Jeba — Portfolio",
     "section": "",
-    "text": "The actual GitHub Actions workflow is here:\n.github/workflows/daily-git-commits.yml\nThe .github folder is a hidden folder on macOS/Linux because its name begins with a dot.\n\n\nIn Finder press:\nCommand + Shift + .\nThat toggles hidden files and folders on/off.\n\n\n\n\nRuns 4 times every day at 03:17, 09:17, 15:17, and 21:17 Europe/Helsinki time.\nRuns scripts/update_site_pulse.py.\nUpdates data/site-pulse.json with a new timestamp and current GitHub portfolio data.\nCommits that changed file to the master branch.\nPushes the commit to GitHub.\nRenders the Quarto website.\nPublishes the rendered website to gh-pages.\n\n\n\n\nAfter pushing this project to GitHub:\n\nOpen the repository.\nClick Actions.\nSelect Daily Git commits and portfolio deploy.\nClick Run workflow.\nChoose the master branch and run it.\nOpen the repository commit history and verify that a new chore(portfolio): automated refresh ... commit appears.\n\n\n\n\nThe workflow must remain under .github/workflows/. A YAML file elsewhere in the repository is not recognized as a GitHub Actions workflow."
+    "text": "A Quarto-based personal research portfolio with a live GitHub activity layer and automated GitHub Pages deployment.\n\n\n\nRedesigned responsive homepage with modern cards, metrics, project highlights, and dark mode.\nLive GitHub repository/profile data loaded from data/site-pulse.json.\nAutomated refresh 4 times per day using GitHub Actions.\nEvery scheduled refresh updates real website data and creates a commit on master.\nThe same workflow renders the Quarto site and publishes it to gh-pages.\nImproved Projects, Publications, Writing, CV, and Contact pages.\nRemoved the duplicated Tailwind CDN dependency and replaced it with a self-contained custom design system.\n\n\n\n\nThe workflow runs at 03:17, 09:17, 15:17, and 21:17 Europe/Helsinki time. GitHub handles daylight-saving changes through the workflow timezone setting.\nGitHub Actions cron is defined in .github/workflows/daily-git-commits.yml.\n\n\n\nScheduled commits are authored with:\n\nname: repository owner (ake123)\nemail: akeketema@yahoo.com (the same author email already used by your existing manual commits)\n\nFor GitHub to attribute these commits to your contribution graph, the commit email must be associated with your GitHub account and the commits must land on the repository’s default branch. Because this email is already used in the repository’s existing manual commits, it is a better attribution choice than a generic bot address. If you later change your verified GitHub email, update this workflow value too.\n\n\n\nInstall Quarto, then run:\nquarto preview\nTo test the live-data update locally:\npython3 scripts/update_site_pulse.py\n\n\n\nThe workflow publishes to the gh-pages branch. In GitHub repository settings, GitHub Pages should use the gh-pages branch as its source."
   },
   {
-    "objectID": "GITHUB-ACTIONS-SETUP.html#show-it-on-macos",
-    "href": "GITHUB-ACTIONS-SETUP.html#show-it-on-macos",
-    "title": "GitHub Actions workflow",
+    "objectID": "GITHUB-ACTIONS-SETUP.html#what-changed",
+    "href": "GITHUB-ACTIONS-SETUP.html#what-changed",
+    "title": "Akewak Jeba — Portfolio",
     "section": "",
-    "text": "In Finder press:\nCommand + Shift + .\nThat toggles hidden files and folders on/off."
+    "text": "Redesigned responsive homepage with modern cards, metrics, project highlights, and dark mode.\nLive GitHub repository/profile data loaded from data/site-pulse.json.\nAutomated refresh 4 times per day using GitHub Actions.\nEvery scheduled refresh updates real website data and creates a commit on master.\nThe same workflow renders the Quarto site and publishes it to gh-pages.\nImproved Projects, Publications, Writing, CV, and Contact pages.\nRemoved the duplicated Tailwind CDN dependency and replaced it with a self-contained custom design system."
   },
   {
-    "objectID": "GITHUB-ACTIONS-SETUP.html#what-the-workflow-does",
-    "href": "GITHUB-ACTIONS-SETUP.html#what-the-workflow-does",
-    "title": "GitHub Actions workflow",
+    "objectID": "GITHUB-ACTIONS-SETUP.html#automated-schedule",
+    "href": "GITHUB-ACTIONS-SETUP.html#automated-schedule",
+    "title": "Akewak Jeba — Portfolio",
     "section": "",
-    "text": "Runs 4 times every day at 03:17, 09:17, 15:17, and 21:17 Europe/Helsinki time.\nRuns scripts/update_site_pulse.py.\nUpdates data/site-pulse.json with a new timestamp and current GitHub portfolio data.\nCommits that changed file to the master branch.\nPushes the commit to GitHub.\nRenders the Quarto website.\nPublishes the rendered website to gh-pages."
+    "text": "The workflow runs at 03:17, 09:17, 15:17, and 21:17 Europe/Helsinki time. GitHub handles daylight-saving changes through the workflow timezone setting.\nGitHub Actions cron is defined in .github/workflows/daily-git-commits.yml."
   },
   {
-    "objectID": "GITHUB-ACTIONS-SETUP.html#first-test-on-github",
-    "href": "GITHUB-ACTIONS-SETUP.html#first-test-on-github",
-    "title": "GitHub Actions workflow",
+    "objectID": "GITHUB-ACTIONS-SETUP.html#contribution-attribution",
+    "href": "GITHUB-ACTIONS-SETUP.html#contribution-attribution",
+    "title": "Akewak Jeba — Portfolio",
     "section": "",
-    "text": "After pushing this project to GitHub:\n\nOpen the repository.\nClick Actions.\nSelect Daily Git commits and portfolio deploy.\nClick Run workflow.\nChoose the master branch and run it.\nOpen the repository commit history and verify that a new chore(portfolio): automated refresh ... commit appears."
+    "text": "Scheduled commits are authored with:\n\nname: repository owner (ake123)\nemail: akeketema@yahoo.com (the same author email already used by your existing manual commits)\n\nFor GitHub to attribute these commits to your contribution graph, the commit email must be associated with your GitHub account and the commits must land on the repository’s default branch. Because this email is already used in the repository’s existing manual commits, it is a better attribution choice than a generic bot address. If you later change your verified GitHub email, update this workflow value too."
   },
   {
-    "objectID": "GITHUB-ACTIONS-SETUP.html#important",
-    "href": "GITHUB-ACTIONS-SETUP.html#important",
-    "title": "GitHub Actions workflow",
+    "objectID": "GITHUB-ACTIONS-SETUP.html#local-preview",
+    "href": "GITHUB-ACTIONS-SETUP.html#local-preview",
+    "title": "Akewak Jeba — Portfolio",
     "section": "",
-    "text": "The workflow must remain under .github/workflows/. A YAML file elsewhere in the repository is not recognized as a GitHub Actions workflow."
+    "text": "Install Quarto, then run:\nquarto preview\nTo test the live-data update locally:\npython3 scripts/update_site_pulse.py"
+  },
+  {
+    "objectID": "GITHUB-ACTIONS-SETUP.html#deployment",
+    "href": "GITHUB-ACTIONS-SETUP.html#deployment",
+    "title": "Akewak Jeba — Portfolio",
+    "section": "",
+    "text": "The workflow publishes to the gh-pages branch. In GitHub repository settings, GitHub Pages should use the gh-pages branch as its source."
   },
   {
     "objectID": "index.html",
