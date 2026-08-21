@@ -3,7 +3,7 @@ name: Daily Git commits and portfolio deploy
 on:
   # Four automated refreshes every day in Helsinki local time.
   schedule:
-    - cron: "17 3,9,15,21 * * *"
+    - cron: "55 4,10,16,22 * * *"
       timezone: "Europe/Helsinki"
   workflow_dispatch:
   push:
