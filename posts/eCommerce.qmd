@@ -93,11 +93,26 @@ This project reflects my commitment to delivering high-quality, tailored eCommer
 
 *Interested in collaborating or sharing feedback? Don’t hesitate to reach out!*
 
-## References 
+## References
 
-<span id="ref1"></span>**[1]** Drupal Commerce. *Drupal Commerce Documentation: Introduction and Developer Guide*. Drupal Commerce Documentation. 
-<span id="ref2"></span>**[2]** Drupal Commerce. *Payments: Payment Providers and Payment Gateways*. Drupal Commerce Developer Guide. <span id="ref3"></span>**[3]** Drupal Association. *Pathauto: Automatically Generate URL/Path Aliases*. Drupal.org Documentation. 
-<span id="ref4"></span>**[4]** Google Search Central. *Mobile-First Indexing Best Practices*. Google for Developers. <span id="ref5"></span>**[5]** Google Search Central. *URL Structure Best Practices for Google Search*. Google for Developers. 
-<span id="ref6"></span>**[6]** Chacon, S., & Straub, B. *Pro Git: About Version Control*. Git Project. <span id="ref7"></span>**[7]** Docker. *Docker Overview: What Is Docker?* Docker Documentation. <span id="ref8"></span>**[8]** Google Search Central. *Understanding Core Web Vitals and Google Search Results*. Google for Developers. 
-<span id="ref9"></span>**[9]** OWASP Foundation. *OWASP Top 10: Web Application Security Risks*. Open Worldwide Application Security Project. 
-<span id="ref10"></span>**[10]** Drupal Security Team. *Security Advisory Process and Permissions Policy*. Drupal.org. <span id="ref11"></span>**[11]** European Commission. *Principles of Personal Data Processing under the GDPR*. European Commission.
+**\[1\]** Drupal Commerce. *Drupal Commerce Documentation: Introduction and Developer Guide*. Drupal Commerce Documentation. 
+
+**\[2\]** Drupal Commerce. *Payments: Payment Providers and Payment Gateways*. Drupal Commerce Developer Guide. 
+
+**\[3\]** Drupal Association. *Pathauto: Automatically Generate URL/Path Aliases*. Drupal.org Documentation. 
+
+**\[4\]** Google Search Central. *Mobile-First Indexing Best Practices*. Google for Developers. 
+
+**\[5\]** Google Search Central. *URL Structure Best Practices for Google Search*. Google for Developers. 
+
+**\[6\]** Chacon, S., & Straub, B. *Pro Git: About Version Control*. Git Project. 
+
+**\[7\]** Docker. *Docker Overview: What Is Docker?* Docker Documentation. 
+
+**\[8\]** Google Search Central. *Understanding Core Web Vitals and Google Search Results*. Google for Developers. 
+
+**\[9\]** OWASP Foundation. *OWASP Top 10: Web Application Security Risks*. Open Worldwide Application Security Project. 
+
+**\[10\]** Drupal Security Team. *Security Advisory Process and Permissions Policy*. Drupal.org. 
+
+**\[11\]** European Commission. *Principles of Personal Data Processing under the GDPR*. European Commission.
