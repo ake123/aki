@@ -10,6 +10,6 @@ listing:
   page-size: 12
 ---
 
-::: {.page-intro}
+::: page-intro
 Longer notes from ongoing work in **data science, cultural heritage computing, scientific software, machine learning, and reproducible research**.
 :::

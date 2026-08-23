@@ -16,21 +16,21 @@ In today’s digital economy, having a seamless, scalable, and secure eCommerce 
 
 In this post, I’ll walk you through what we’re building, how we’re approaching it, and the technologies driving this project.
 
----
+------------------------------------------------------------------------
 
 ## Why This Project?
 
 The need for reliable eCommerce infrastructure continues to grow, especially for independent brands, local businesses, and specialized products. Our project is designed to:
 
-- ✅ Provide a flexible, customizable online storefront  
-- ✅ Integrate secure payment systems with minimal friction  
-- ✅ Support product catalogs, order management, and user accounts  
-- ✅ Ensure SEO-friendly URLs, efficient performance, and mobile responsiveness  
-- ✅ Lay the groundwork for future enhancements like analytics, marketing automation, and multilingual support  
+- ✅ Provide a flexible, customizable online storefront\
+- ✅ Integrate secure payment systems with minimal friction\
+- ✅ Support product catalogs, order management, and user accounts\
+- ✅ Ensure SEO-friendly URLs, efficient performance, and mobile responsiveness\
+- ✅ Lay the groundwork for future enhancements like analytics, marketing automation, and multilingual support
 
 We’re not just building another webshop—we’re building a platform ready to grow with your business.
 
----
+------------------------------------------------------------------------
 
 ## The Tech Stack: Powering Our eCommerce Vision
 
@@ -38,58 +38,57 @@ Behind the scenes, we’re combining proven tools and modern development practic
 
 **🔧 Key Technologies**
 
-- **Drupal Commerce** — The core of our storefront, combining content management with commerce functionality  
-- **Pathauto & URL Aliases** — Automating clean, SEO-friendly URLs for products, stores, and more  
-- **Custom Backend Features** — Product management, order workflows, and future extensibility  
-- **Payment Gateway Integration** — Secure, flexible transactions with multiple provider support  
-- **Responsive Frontend** — Optimized across devices, ensuring a great mobile and desktop experience  
+- **Drupal Commerce** — The core of our storefront, combining content management with commerce functionality\
+- **Pathauto & URL Aliases** — Automating clean, SEO-friendly URLs for products, stores, and more\
+- **Custom Backend Features** — Product management, order workflows, and future extensibility\
+- **Payment Gateway Integration** — Secure, flexible transactions with multiple provider support\
+- **Responsive Frontend** — Optimized across devices, ensuring a great mobile and desktop experience
 
 **💻 Development Best Practices**
 
-- Version control with Git  
-- Automated deployments  
-- Containerization with Docker  
-- Modular, scalable code structure  
+- Version control with Git\
+- Automated deployments\
+- Containerization with Docker\
+- Modular, scalable code structure
 
----
+------------------------------------------------------------------------
 
 ## Progress So Far
 
 We’ve already achieved some major milestones:
 
-✅ Drupal Commerce setup and configuration  
-✅ Product catalog structure established  
-✅ URL aliases generated for products, stores, and key content  
-✅ Admin workflows optimized for store managers  
-✅ Local development and testing environments configured  
+✅ Drupal Commerce setup and configuration\
+✅ Product catalog structure established\
+✅ URL aliases generated for products, stores, and key content\
+✅ Admin workflows optimized for store managers\
+✅ Local development and testing environments configured
 
 **Next Steps**
 
-- 🚀 Frontend polishing for a branded, intuitive storefront  
-- 🛠️ Extending order processing and payment features  
-- 📈 Adding analytics and performance monitoring  
-- 🔒 Security enhancements and GDPR compliance  
+- 🚀 Frontend polishing for a branded, intuitive storefront\
+- 🛠️ Extending order processing and payment features\
+- 📈 Adding analytics and performance monitoring\
+- 🔒 Security enhancements and GDPR compliance
 
----
+------------------------------------------------------------------------
 
 ## Looking Ahead
 
 Our long-term vision goes beyond transactions. We’re creating an eCommerce platform focused on building relationships:
 
-- Personalized shopping experiences  
-- Marketing tool integration  
-- Social sharing and community engagement  
-- Scalable architecture for future growth  
+- Personalized shopping experiences\
+- Marketing tool integration\
+- Social sharing and community engagement\
+- Scalable architecture for future growth
 
 We believe eCommerce should connect brands with their audience, not just process orders.
 
----
+------------------------------------------------------------------------
 
 ## Final Thoughts
 
-This project reflects our team's commitment to delivering high-quality, tailored eCommerce solutions that adapt to real-world needs.
+This project reflects my commitment to delivering high-quality, tailored eCommerce solutions that adapt to real-world needs.
 
 **Stay tuned for more updates as we bring this platform to life.**
 
-_Interested in collaborating or sharing feedback? Don’t hesitate to reach out!_
-
+*Interested in collaborating or sharing feedback? Don’t hesitate to reach out!*
