@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Akewak Jeba">
+<meta name="dcterms.date" content="2026-08-24">
+<meta name="description" content="An open and reproducible R workflow for transforming Finnish airborne LiDAR point clouds into forest-structure metrics, canopy models, and machine-learning features.">
+
+<title>FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R – Akewak Jeba</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/ake.jpeg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ccd81253fefb92e9cd3f9eb5b5d87b54.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles/custom.css">
+<meta property="og:title" content="FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R – Akewak Jeba">
+<meta property="og:description" content="An open and reproducible R workflow for transforming Finnish airborne LiDAR point clouds into forest-structure metrics, canopy models, and machine-learning features.">
+<meta property="og:image" content="https://ake123.github.io/akewak/posts/images/cover-finnishforestai-lidar.png">
+<meta property="og:site_name" content="Akewak Jeba">
+<meta property="og:image:alt" content="A Finnish forest represented as a three-dimensional LiDAR point cloud">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:width" content="1536">
+<meta name="twitter:title" content="FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R – Akewak Jeba">
+<meta name="twitter:description" content="An open and reproducible R workflow for transforming Finnish airborne LiDAR point clouds into forest-structure metrics, canopy models, and machine-learning features.">
+<meta name="twitter:image" content="https://ake123.github.io/akewak/posts/images/cover-finnishforestai-lidar.png">
+<meta name="twitter:image:alt" content="A Finnish forest represented as a three-dimensional LiDAR point cloud">
+<meta name="twitter:image-height" content="1024">
+<meta name="twitter:image-width" content="1536">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Akewak Jeba</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html"> 
+<span class="menu-text">Writing</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Resume.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ake123"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/akewak-j-ab82b528/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#understanding-the-lidar-point-cloud" id="toc-understanding-the-lidar-point-cloud" class="nav-link active" data-scroll-target="#understanding-the-lidar-point-cloud">Understanding the LiDAR point cloud</a></li>
+  <li><a href="#from-elevation-to-tree-and-canopy-height" id="toc-from-elevation-to-tree-and-canopy-height" class="nav-link" data-scroll-target="#from-elevation-to-tree-and-canopy-height">From elevation to tree and canopy height</a></li>
+  <li><a href="#building-a-canopy-height-model" id="toc-building-a-canopy-height-model" class="nav-link" data-scroll-target="#building-a-canopy-height-model">Building a Canopy Height Model</a></li>
+  <li><a href="#deriving-forest-structure-metrics" id="toc-deriving-forest-structure-metrics" class="nav-link" data-scroll-target="#deriving-forest-structure-metrics">Deriving forest-structure metrics</a></li>
+  <li><a href="#where-machine-learning-enters-the-workflow" id="toc-where-machine-learning-enters-the-workflow" class="nav-link" data-scroll-target="#where-machine-learning-enters-the-workflow">Where machine learning enters the workflow</a></li>
+  <li><a href="#why-finland-is-an-interesting-test-environment" id="toc-why-finland-is-an-interesting-test-environment" class="nav-link" data-scroll-target="#why-finland-is-an-interesting-test-environment">Why Finland is an interesting test environment</a></li>
+  <li><a href="#why-use-r" id="toc-why-use-r" class="nav-link" data-scroll-target="#why-use-r">Why use R?</a></li>
+  <li><a href="#reproducibility-with-quarto-and-github" id="toc-reproducibility-with-quarto-and-github" class="nav-link" data-scroll-target="#reproducibility-with-quarto-and-github">Reproducibility with Quarto and GitHub</a></li>
+  <li><a href="#important-limitations" id="toc-important-limitations" class="nav-link" data-scroll-target="#important-limitations">Important limitations</a></li>
+  <li><a href="#toward-a-finnish-forestry-ai-workflow" id="toc-toward-a-finnish-forestry-ai-workflow" class="nav-link" data-scroll-target="#toward-a-finnish-forestry-ai-workflow">Toward a Finnish forestry AI workflow</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">LiDAR</div>
+    <div class="quarto-category">forestry</div>
+    <div class="quarto-category">geospatial</div>
+    <div class="quarto-category">machine-learning</div>
+    <div class="quarto-category">remote-sensing</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    An open and reproducible R workflow for transforming Finnish airborne LiDAR point clouds into forest-structure metrics, canopy models, and machine-learning features.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Akewak Jeba </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 24, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><img src="images/cover-finnishforestai-lidar.png" class="post-cover img-fluid" alt="A Finnish forest represented as a three-dimensional LiDAR point cloud"></p>
+<p>Forests are inherently three-dimensional. Tree crowns occupy different heights, branches overlap, terrain changes beneath the canopy, and vegetation is distributed vertically from the forest floor to the upper canopy. Traditional maps and aerial images capture only part of this structure. <strong>LiDAR (Light Detection and Ranging)</strong> adds another dimension by representing the landscape as a dense collection of three-dimensional points.</p>
+<p><strong>FinnishForestAI</strong> is an experimental open-source project that explores how Finnish airborne laser-scanning data can be transformed into reproducible forest-structure information and machine-learning features using <strong>R</strong>. The goal is not to replace operational forest inventory, but to demonstrate how open geospatial data, point-cloud processing, statistical computing, and AI can be combined in a transparent workflow.</p>
+<p>Finland provides an especially interesting environment for this kind of work. The <strong>National Land Survey of Finland (NLS)</strong> publishes open laser-scanning data in which every observation contains three-dimensional coordinate information. Its open <strong>Laser scanning data 0.5 p</strong> product is derived by thinning denser 5 points/m² data to approximately 0.5 points/m² and is distributed in LAZ format <a href="#ref1">[1]</a>. The dataset uses the Finnish national ETRS89/TM35FIN coordinate reference system (EPSG:3067) and N2000 heights <a href="#ref1">[1]</a>.</p>
+<section id="understanding-the-lidar-point-cloud" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-lidar-point-cloud">Understanding the LiDAR point cloud</h2>
+<p>A LiDAR point cloud can be thought of as a very large spatial table. At minimum, each point has coordinates:</p>
+<p><span class="math display">\[(x, y, z)\]</span></p>
+<p>where <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> represent horizontal position and <span class="math inline">\(z\)</span> represents elevation.</p>
+<p>LiDAR files may also contain information such as return number, intensity, scan characteristics, and point classification. These attributes are particularly valuable in forests because a laser pulse may interact with several layers of vegetation before reaching the ground.</p>
+<p>The NLS product includes automatic point classifications that distinguish, among other classes, <strong>ground</strong>, <strong>low vegetation</strong>, <strong>medium vegetation</strong>, and <strong>high vegetation</strong> <a href="#ref1">[1]</a>. Ground points use class 2, while vegetation classes 3, 4, and 5 correspond to increasing height ranges above the ground surface <a href="#ref1">[1]</a>.</p>
+<p>These classifications make the point cloud much more than a geometric representation. They provide a starting point for separating terrain from vegetation and for deriving forest-structure information.</p>
+</section>
+<section id="from-elevation-to-tree-and-canopy-height" class="level2">
+<h2 class="anchored" data-anchor-id="from-elevation-to-tree-and-canopy-height">From elevation to tree and canopy height</h2>
+<p>One of the first challenges in forestry LiDAR analysis is that the raw <span class="math inline">\(z\)</span>-coordinate represents <strong>absolute elevation</strong>, not tree height.</p>
+<p>If a tree-top point is located at an elevation of 145 metres and the terrain beneath it is at 123 metres, the useful forestry quantity is approximately:</p>
+<p><span class="math display">\[145 - 123 = 22\text{ m}\]</span></p>
+<p>This motivates <strong>height normalization</strong>, where the terrain elevation is estimated from ground-classified points and then subtracted from each LiDAR point:</p>
+<p><span class="math display">\[h_{AGL} = z_{point} - z_{ground}\]</span></p>
+<p>The result is height above ground level rather than height above the national elevation reference.</p>
+<p>In R, the open-source <strong>lidR</strong> package provides a comprehensive framework for reading, processing, analysing, and visualising airborne laser-scanning data, with a particular emphasis on forestry and ecological applications <a href="#ref4">[4]</a> <a href="#ref5">[5]</a>.</p>
+<p>A simplified workflow can look like this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lidR)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>las <span class="ot">&lt;-</span> <span class="fu">readLAS</span>(<span class="st">"data/raw/finnish_forest_tile.laz"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Inspect the point cloud</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>las</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Normalize point elevations relative to terrain</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>las_normalized <span class="ot">&lt;-</span> <span class="fu">normalize_height</span>(las, <span class="fu">tin</span>())</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Build a canopy height model</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>chm <span class="ot">&lt;-</span> <span class="fu">rasterize_canopy</span>(</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  las_normalized,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">res =</span> <span class="dv">2</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">algorithm =</span> <span class="fu">p2r</span>()</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(chm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The exact terrain-normalization and rasterisation method should be selected according to point density, terrain, vegetation structure, and the analytical goal. A method that works well in one forest type may not be optimal in another.</p>
+</section>
+<section id="building-a-canopy-height-model" class="level2">
+<h2 class="anchored" data-anchor-id="building-a-canopy-height-model">Building a Canopy Height Model</h2>
+<p>A common product derived from normalized LiDAR is the <strong>Canopy Height Model (CHM)</strong>.</p>
+<p>A CHM converts the three-dimensional point cloud into a raster where each cell describes the estimated canopy height at that location. Instead of inspecting millions of individual points, the analyst obtains a spatial surface that can be mapped and analysed.</p>
+<p>Conceptually, the workflow is:</p>
+<p><strong>LiDAR point cloud → ground model → normalized heights → canopy surface → Canopy Height Model</strong></p>
+<p>A CHM can support analyses of canopy structure, gaps, dominant vegetation height, and spatial variability. It can also provide features for downstream machine-learning tasks.</p>
+<p>However, a CHM is still a derived representation. Its quality depends on factors such as point density, terrain modelling, interpolation, raster resolution, vegetation complexity, and the quality of the original classification.</p>
+</section>
+<section id="deriving-forest-structure-metrics" class="level2">
+<h2 class="anchored" data-anchor-id="deriving-forest-structure-metrics">Deriving forest-structure metrics</h2>
+<p>The point cloud can also be summarised statistically.</p>
+<p>For a forest grid cell or analysis plot, useful LiDAR-derived variables may include:</p>
+<ul>
+<li>mean vegetation height;</li>
+<li>median height;</li>
+<li>height percentiles such as P25, P50, P75, and P95;</li>
+<li>maximum observed height;</li>
+<li>canopy cover above a selected threshold;</li>
+<li>point density;</li>
+<li>proportions of points in different vertical layers; and</li>
+<li>measures of vertical height variability.</li>
+</ul>
+<p>The <strong>95th percentile of vegetation height (P95)</strong> is particularly useful because it describes the upper canopy while being less sensitive than the single highest point to isolated outliers.</p>
+<p>Instead of treating an entire forest as one observation, the study area can be divided into spatial cells. For each cell, FinnishForestAI can construct a feature table such as:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Cell</th>
+<th style="text-align: right;">Mean height</th>
+<th style="text-align: right;">P95 height</th>
+<th style="text-align: right;">Canopy cover</th>
+<th style="text-align: right;">Point density</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td style="text-align: right;">11.8</td>
+<td style="text-align: right;">21.4</td>
+<td style="text-align: right;">0.71</td>
+<td style="text-align: right;">0.49</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td style="text-align: right;">8.9</td>
+<td style="text-align: right;">17.2</td>
+<td style="text-align: right;">0.53</td>
+<td style="text-align: right;">0.52</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td style="text-align: right;">14.1</td>
+<td style="text-align: right;">24.8</td>
+<td style="text-align: right;">0.82</td>
+<td style="text-align: right;">0.47</td>
+</tr>
+</tbody>
+</table>
+<p>This transformation is important because it connects a complex three-dimensional point cloud with familiar statistical and machine-learning workflows.</p>
+</section>
+<section id="where-machine-learning-enters-the-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="where-machine-learning-enters-the-workflow">Where machine learning enters the workflow</h2>
+<p>LiDAR itself is not AI. It is a remote-sensing measurement technology.</p>
+<p>AI becomes relevant when LiDAR-derived observations are used to build models for classification, prediction, segmentation, or decision support.</p>
+<p>In FinnishForestAI, the R workflow is designed so that point-cloud processing produces structured features that can be passed to machine-learning tools such as <strong>ranger</strong>, an efficient Random Forest implementation in R.</p>
+<p>A conceptual workflow is:</p>
+<p><strong>LiDAR → preprocessing → height normalization → forest metrics → machine-learning features → model</strong></p>
+<p>For example, a model could use variables such as P95 height, mean height, canopy cover, point density, and vertical variability. With appropriate independent reference data, these features could be evaluated for predicting forest attributes.</p>
+<p>This distinction is important: estimates of properties such as timber volume, biomass, dominant height, stem density, or tree-species composition require suitable <strong>ground-truth or reference data</strong> and proper validation. A machine-learning model should not be treated as a forestry measurement simply because it can be trained on LiDAR-derived features.</p>
+<p>Random Forest provides a useful baseline because it can model nonlinear relationships and interactions while remaining relatively easy to inspect. More advanced approaches could later include gradient boosting, deep learning, or architectures designed directly for three-dimensional point clouds.</p>
+</section>
+<section id="why-finland-is-an-interesting-test-environment" class="level2">
+<h2 class="anchored" data-anchor-id="why-finland-is-an-interesting-test-environment">Why Finland is an interesting test environment</h2>
+<p>LiDAR is already an important part of Finland’s forest-information infrastructure.</p>
+<p>The <strong>Finnish Forest Centre</strong> describes a forest-resource inventory process that combines sample-plot measurements, airborne laser scanning, and aerial photography <a href="#ref3">[3]</a>. Laser scanning provides three-dimensional information about trees and terrain, while aerial photography contributes information useful for tasks such as tree-species interpretation <a href="#ref3">[3]</a>.</p>
+<p>The Forest Centre’s current remote-sensing inventory process uses a 16 × 16 metre grid for tree-stand interpretation and develops statistical models using field sample plots together with remote-sensing information <a href="#ref3">[3]</a>.</p>
+<p>This provides an important methodological lesson for AI projects: <strong>remote-sensing data become substantially more useful when they are combined with reliable reference measurements</strong>.</p>
+<p>Finnish research has also demonstrated the long-standing role of airborne laser scanning in forest inventory. Studies have investigated area-based forest inventory, individual-tree features, and statistical estimation of forest variables using airborne laser-scanning data in Finnish and Nordic environments <a href="#ref6">[6]</a>.</p>
+</section>
+<section id="why-use-r" class="level2">
+<h2 class="anchored" data-anchor-id="why-use-r">Why use R?</h2>
+<p>R has a mature ecosystem for spatial analysis, statistical modelling, reproducible research, and scientific communication.</p>
+<p>For FinnishForestAI, several components are particularly useful:</p>
+<ul>
+<li><strong>lidR</strong> for airborne LiDAR point-cloud processing;</li>
+<li><strong>terra</strong> for raster operations;</li>
+<li><strong>sf</strong> for vector spatial data;</li>
+<li><strong>ranger</strong> for Random Forest modelling;</li>
+<li><strong>ggplot2</strong> for statistical visualisation; and</li>
+<li><strong>Quarto</strong> for combining narrative, code, figures, methods, and references in a reproducible document.</li>
+</ul>
+<p>The <code>lidR</code> package was explicitly designed for airborne laser-scanning analysis and integrates with the wider R geospatial ecosystem <a href="#ref4">[4]</a> <a href="#ref5">[5]</a>.</p>
+<p>This makes it possible to keep the analysis pipeline, methodological explanation, figures, and reproducibility information together rather than separating code from documentation.</p>
+</section>
+<section id="reproducibility-with-quarto-and-github" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility-with-quarto-and-github">Reproducibility with Quarto and GitHub</h2>
+<p>A central aim of FinnishForestAI is reproducibility.</p>
+<p>A Quarto-based workflow allows the analysis to be documented as an executable scientific report. Code can be displayed alongside interpretation, while outputs such as canopy maps, height distributions, and model summaries can be regenerated from the underlying analysis.</p>
+<p>The same project can be hosted publicly on GitHub, while <strong>GitHub Actions</strong> can render and publish the Quarto website automatically.</p>
+<p>A simplified project structure is:</p>
+<pre class="text"><code>FinnishForestAI/
+├── index.qmd
+├── _quarto.yml
+├── r/
+│   └── forest_lidar_analysis.R
+├── data/
+├── outputs/
+├── references.bib
+└── .github/
+    └── workflows/
+        └── quarto-publish.yml</code></pre>
+<p>Large <code>.las</code> and <code>.laz</code> files should generally not be stored directly in a Git repository. Instead, the repository can provide instructions for obtaining the original NLS data and can include small demonstration datasets or derived outputs where licensing and file size permit.</p>
+<p>The NLS 0.5 p laser-scanning product is available as open data under <strong>CC BY 4.0</strong>, subject to attribution requirements <a href="#ref1">[1]</a> <a href="#ref2">[2]</a>.</p>
+</section>
+<section id="important-limitations" class="level2">
+<h2 class="anchored" data-anchor-id="important-limitations">Important limitations</h2>
+<p>Working with open LiDAR does not remove the need for careful methodological choices.</p>
+<p>First, the open NLS 0.5 p dataset is intentionally thinned from denser 5 points/m² laser-scanning data <a href="#ref1">[1]</a>. A density of approximately 0.5 points/m² can support many area-based analyses, but it provides less detailed representation of individual trees and fine canopy structure than denser point clouds.</p>
+<p>Second, NLS point classifications are automatic. The product documentation explicitly notes that automatic classifications are not expected to be perfect and that users may need to filter or classify the data according to their own requirements <a href="#ref1">[1]</a>.</p>
+<p>Third, remote-sensing models must be validated. A visually convincing canopy map does not automatically imply that predictions of forestry variables are accurate.</p>
+<p>Finally, forests are dynamic. Tree growth, harvesting, storms, management operations, and differences between acquisition dates can create discrepancies when LiDAR is combined with other spatial or forest-resource datasets.</p>
+</section>
+<section id="toward-a-finnish-forestry-ai-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="toward-a-finnish-forestry-ai-workflow">Toward a Finnish forestry AI workflow</h2>
+<p>The next step for FinnishForestAI is to move from a general LiDAR-processing prototype toward a documented Finnish case study.</p>
+<p>A future workflow could combine:</p>
+<p><strong>NLS LiDAR + Finnish Forest Centre forest-resource information + aerial or satellite imagery</strong></p>
+<p>followed by:</p>
+<p><strong>spatial harmonisation → feature engineering → model training → independent validation → interactive visualisation</strong></p>
+<p>Potential research questions include:</p>
+<ul>
+<li>How well do open 0.5 p LiDAR metrics describe canopy structure?</li>
+<li>Which height and density metrics are most informative for different forest conditions?</li>
+<li>How does grid resolution affect model performance?</li>
+<li>What is gained by combining LiDAR with optical imagery?</li>
+<li>How transferable are models between different Finnish forest regions?</li>
+<li>How closely can an open-source workflow reproduce forest-structure variables available from established inventory systems?</li>
+</ul>
+<p>These questions move the project beyond simply visualising a point cloud. They connect geospatial computing, remote sensing, forest science, machine learning, and reproducible research.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>FinnishForestAI demonstrates how open Finnish LiDAR data can provide a foundation for learning and experimenting with modern geospatial AI workflows.</p>
+<p>The most important transformation is not from LiDAR directly to AI, but through a sequence of carefully defined analytical steps:</p>
+<p><strong>3D points → terrain → normalized vegetation heights → forest metrics → spatial features → validated models</strong></p>
+<p>Finland’s open geospatial infrastructure makes it possible to explore these methods using real national datasets, while R provides a strong environment for point-cloud processing, statistical modelling, and reproducible reporting.</p>
+<p>For an open-source project, this combination is particularly valuable: the data source is documented, the analytical decisions can be inspected, the code can be reproduced, and model outputs can be evaluated rather than treated as black-box predictions.</p>
+<p>FinnishForestAI is therefore best understood as a bridge between <strong>LiDAR remote sensing, reproducible geospatial software, and AI-assisted forest analysis</strong>.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p><a id="ref1"></a> <strong>[1]</strong> National Land Survey of Finland. <em>Laser scanning data 0.5 p</em>. Product description. https://www.maanmittauslaitos.fi/en/maps-and-spatial-data/datasets-and-interfaces/product-descriptions/laser-scanning-data-05-p</p>
+<p><a id="ref2"></a> <strong>[2]</strong> National Land Survey of Finland. <em>Publication rights</em>. Open geospatial datasets and CC BY 4.0 licensing. https://www.maanmittauslaitos.fi/en/about-nls/organisation/publications-and-brochures/publication-rights</p>
+<p><a id="ref3"></a> <strong>[3]</strong> Finnish Forest Centre. <em>Collection of forest resource information</em>. https://www.metsakeskus.fi/en/open-forest-and-nature-information/collection-of-forest-resource-information</p>
+<p><a id="ref4"></a> <strong>[4]</strong> Roussel, J.-R., Auty, D., Coops, N. C., Tompalski, P., Goodbody, T. R. H., Sánchez Meador, A., Bourdon, J.-F., de Boissieu, F., &amp; Achim, A. (2020). lidR: An R package for analysis of Airborne Laser Scanning (ALS) data. <em>Remote Sensing of Environment, 251</em>, 112061. https://doi.org/10.1016/j.rse.2020.112061</p>
+<p><a id="ref5"></a> <strong>[5]</strong> Roussel, J.-R., Goodbody, T. R. H., &amp; Tompalski, P. <em>The lidR package: A guide to the lidR package</em>. https://r-lidar.github.io/lidRbook/</p>
+<p><a id="ref6"></a> <strong>[6]</strong> Kauranne, T., Pyankov, S., Junttila, V., Kedrov, A., Tarasov, A., Kuzmin, A., Peuhkurinen, J., Villikka, M., Vartio, V.-M., &amp; Sirparanta, S. (2017). Airborne Laser Scanning Based Forest Inventory: Comparison of Experimental Results for the Perm Region, Russia and Prior Results from Finland. <em>Forests, 8</em>(3), 72. https://doi.org/10.3390/f8030072</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script src="js/main.js" defer=""></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ake123\.github\.io\/akewak\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© <span id="footer-year">2026</span> Akewak Jeba</p>
+</div>   
+    <div class="nav-footer-center">
+<p><span class="footer-pulse"><span class="pulse-dot"></span> Automated portfolio refresh: 4× daily</span></p>
+</div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a> · <a href="https://github.com/ake123">GitHub</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

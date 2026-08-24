@@ -1,0 +1,345 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Writing",
+    "section": "",
+    "text": "Longer notes from ongoing work in data science, cultural heritage computing, scientific software, machine learning, and reproducible research.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R\n\n\n\nR\n\nLiDAR\n\nforestry\n\ngeospatial\n\nmachine-learning\n\nremote-sensing\n\n\n\nAn open and reproducible R workflow for transforming Finnish airborne LiDAR point clouds into forest-structure metrics, canopy models, and machine-learning features.\n\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nTracing the Evolution of Knowledge Through Bibliographic Data Science\n\n\n\nR\n\ncultural-heritage\n\nfinna\n\nbibliographic-data-science\n\n\n\nUsing bibliographic data science to study long-term transformations in European book culture, publishing, and knowledge production.\n\n\n\nJul 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nLimROTS: A New Tool for Reliable Differential Expression Analysis in Proteomics\n\n\n\nR\n\nproteomics\n\nbioinformatics\n\nBioconductor\n\n\n\nA reproducibility-oriented statistical method combining limma and ROTS for robust differential expression analysis in proteomics.\n\n\n\nJun 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding the Foundation for Our eCommerce Platform\n\n\n\neCommerce\n\nDrupal\n\nWeb-Development\n\n\n\nA behind-the-scenes look at a scalable, flexible eCommerce platform built with Drupal Commerce and modern development practices.\n\n\n\nMay 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nGraph Learning for Microbiome Research\n\n\n\nmicrobiome\n\nmachine-learning\n\ngraph\n\n\n\nExploring how microbial association networks and graph neural networks can help model complex microbiome communities.\n\n\n\nApr 27, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "Publications.html",
+    "href": "Publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Selected peer-reviewed publications and research software spanning cultural heritage data science, bioinformatics, statistical computing, and interactive analysis."
+  },
+  {
+    "objectID": "Publications.html#peer-reviewed-articles",
+    "href": "Publications.html#peer-reviewed-articles",
+    "title": "Publications",
+    "section": "Peer-reviewed articles",
+    "text": "Peer-reviewed articles\n\nAutomated Retrieval and Analysis of Finnish Cultural Metadata with finna (2026)\nAkewak Jeba, Julia Matveeva, Leo Lahti · Data Science Journal, 25(1).\nA reproducible software and workflow contribution for retrieving and analyzing large-scale Finnish cultural heritage metadata through the Finna API.\n\nArticle finna documentation\n\n\n\nLimROTS: a hybrid method integrating empirical Bayes and reproducibility-optimized statistics for robust differential expression analysis (2025)\nAli Mostafa Anwar, Akewak Jeba, Leo Lahti, Eleanor Coffey · Bioinformatics, 41(12), btaf570.\n\nDOI Bioconductor\n\n\n\niSEEtree: interactive explorer for hierarchical data (2025)\nGiulio Benedetti, Ely Seraidarian, Theotime Pralas, Akewak Jeba, Tuomas Borman, Leo Lahti · Bioinformatics Advances, 5(1), vbaf107.\n\nDOI PubMed"
+  },
+  {
+    "objectID": "Publications.html#scientific-software",
+    "href": "Publications.html#scientific-software",
+    "title": "Publications",
+    "section": "Scientific software",
+    "text": "Scientific software\n\nfinna — R client for the Finna API and cultural heritage metadata workflows.\nLimROTS — Bioconductor package for robust differential expression analysis.\niSEEtree — interactive exploration of hierarchical biological data."
+  },
+  {
+    "objectID": "Publications.html#theses",
+    "href": "Publications.html#theses",
+    "title": "Publications",
+    "section": "Theses",
+    "text": "Theses\n\nMSc, Computer Science (2021): Using Principal Component Analysis to Determine Changes in Mechanical Properties\nBEng, Information Technology (2011): Digital Image Processing and Image Restoration"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "My projects focus on reproducible data access, scientific software, machine learning, and research infrastructure. I especially enjoy building the layer between difficult source systems and researchers who need clean, analyzable data."
+  },
+  {
+    "objectID": "projects.html#cultural-heritage-bibliographic-data",
+    "href": "projects.html#cultural-heritage-bibliographic-data",
+    "title": "Projects",
+    "section": "Cultural heritage & bibliographic data",
+    "text": "Cultural heritage & bibliographic data\n\nfinna — Finna API for R\nAn open-source R package for retrieving and analyzing cultural heritage metadata from Finland’s Finna service. It provides reproducible access to records from libraries, museums, archives, and other cultural heritage organizations.\nFocus: API clients · metadata retrieval · reproducible workflows · digital humanities\nDocumentation GitHub\n\n\nfinto — Semantic vocabularies and ontologies\nR tooling for accessing Finnish vocabulary and ontology services. The work supports concept lookup, multilingual metadata enrichment, semantic search, and the use of controlled vocabularies in computational research.\nFocus: linked data · ontologies · multilingual metadata · semantic enrichment\n\n\nfennica — Finnish national bibliography workflows\nTools and analysis workflows for working with Finnish national bibliography data at scale, including harmonization and computational analysis of historical publication metadata.\nFocus: bibliographic data science · metadata harmonization · cultural history · R"
+  },
+  {
+    "objectID": "projects.html#computational-biology",
+    "href": "projects.html#computational-biology",
+    "title": "Projects",
+    "section": "Computational biology",
+    "text": "Computational biology\n\nLimROTS\nA hybrid statistical method and Bioconductor package that combines empirical Bayes modeling with reproducibility-optimized statistics for robust differential expression analysis.\nFocus: statistical programming · proteomics · Bioconductor · reproducibility\nBioconductor\n\n\niSEEtree\nAn interactive explorer for hierarchical biological data, developed as part of a collaborative scientific software project.\nFocus: interactive analysis · visualization · hierarchical data · Bioconductor"
+  },
+  {
+    "objectID": "projects.html#research-engineering",
+    "href": "projects.html#research-engineering",
+    "title": "Projects",
+    "section": "Research engineering",
+    "text": "Research engineering\n\nAI-assisted reproducible analysis\nMethodological work exploring how AI systems can help researchers construct transparent computational workflows across data retrieval, cleaning, variable construction, statistical analysis, visualization, and reporting.\nFocus: AI agents · reproducibility · evaluation · statistical workflows · provenance"
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html",
+    "href": "posts/finnishforestai-lidar-blog.html",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "",
+    "text": "Forests are inherently three-dimensional. Tree crowns occupy different heights, branches overlap, terrain changes beneath the canopy, and vegetation is distributed vertically from the forest floor to the upper canopy. Traditional maps and aerial images capture only part of this structure. LiDAR (Light Detection and Ranging) adds another dimension by representing the landscape as a dense collection of three-dimensional points.\nFinnishForestAI is an experimental open-source project that explores how Finnish airborne laser-scanning data can be transformed into reproducible forest-structure information and machine-learning features using R. The goal is not to replace operational forest inventory, but to demonstrate how open geospatial data, point-cloud processing, statistical computing, and AI can be combined in a transparent workflow.\nFinland provides an especially interesting environment for this kind of work. The National Land Survey of Finland (NLS) publishes open laser-scanning data in which every observation contains three-dimensional coordinate information. Its open Laser scanning data 0.5 p product is derived by thinning denser 5 points/m² data to approximately 0.5 points/m² and is distributed in LAZ format [1]. The dataset uses the Finnish national ETRS89/TM35FIN coordinate reference system (EPSG:3067) and N2000 heights [1]."
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html#understanding-the-lidar-point-cloud",
+    "href": "posts/finnishforestai-lidar-blog.html#understanding-the-lidar-point-cloud",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "Understanding the LiDAR point cloud",
+    "text": "Understanding the LiDAR point cloud\nA LiDAR point cloud can be thought of as a very large spatial table. At minimum, each point has coordinates:\n\\[(x, y, z)\\]\nwhere \\(x\\) and \\(y\\) represent horizontal position and \\(z\\) represents elevation.\nLiDAR files may also contain information such as return number, intensity, scan characteristics, and point classification. These attributes are particularly valuable in forests because a laser pulse may interact with several layers of vegetation before reaching the ground.\nThe NLS product includes automatic point classifications that distinguish, among other classes, ground, low vegetation, medium vegetation, and high vegetation [1]. Ground points use class 2, while vegetation classes 3, 4, and 5 correspond to increasing height ranges above the ground surface [1].\nThese classifications make the point cloud much more than a geometric representation. They provide a starting point for separating terrain from vegetation and for deriving forest-structure information."
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html#from-elevation-to-tree-and-canopy-height",
+    "href": "posts/finnishforestai-lidar-blog.html#from-elevation-to-tree-and-canopy-height",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "From elevation to tree and canopy height",
+    "text": "From elevation to tree and canopy height\nOne of the first challenges in forestry LiDAR analysis is that the raw \\(z\\)-coordinate represents absolute elevation, not tree height.\nIf a tree-top point is located at an elevation of 145 metres and the terrain beneath it is at 123 metres, the useful forestry quantity is approximately:\n\\[145 - 123 = 22\\text{ m}\\]\nThis motivates height normalization, where the terrain elevation is estimated from ground-classified points and then subtracted from each LiDAR point:\n\\[h_{AGL} = z_{point} - z_{ground}\\]\nThe result is height above ground level rather than height above the national elevation reference.\nIn R, the open-source lidR package provides a comprehensive framework for reading, processing, analysing, and visualising airborne laser-scanning data, with a particular emphasis on forestry and ecological applications [4] [5].\nA simplified workflow can look like this:\n\nlibrary(lidR)\n\nlas &lt;- readLAS(\"data/raw/finnish_forest_tile.laz\")\n\n# Inspect the point cloud\nlas\n\n# Normalize point elevations relative to terrain\nlas_normalized &lt;- normalize_height(las, tin())\n\n# Build a canopy height model\nchm &lt;- rasterize_canopy(\n  las_normalized,\n  res = 2,\n  algorithm = p2r()\n)\n\nplot(chm)\n\nThe exact terrain-normalization and rasterisation method should be selected according to point density, terrain, vegetation structure, and the analytical goal. A method that works well in one forest type may not be optimal in another."
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html#building-a-canopy-height-model",
+    "href": "posts/finnishforestai-lidar-blog.html#building-a-canopy-height-model",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "Building a Canopy Height Model",
+    "text": "Building a Canopy Height Model\nA common product derived from normalized LiDAR is the Canopy Height Model (CHM).\nA CHM converts the three-dimensional point cloud into a raster where each cell describes the estimated canopy height at that location. Instead of inspecting millions of individual points, the analyst obtains a spatial surface that can be mapped and analysed.\nConceptually, the workflow is:\nLiDAR point cloud → ground model → normalized heights → canopy surface → Canopy Height Model\nA CHM can support analyses of canopy structure, gaps, dominant vegetation height, and spatial variability. It can also provide features for downstream machine-learning tasks.\nHowever, a CHM is still a derived representation. Its quality depends on factors such as point density, terrain modelling, interpolation, raster resolution, vegetation complexity, and the quality of the original classification."
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html#deriving-forest-structure-metrics",
+    "href": "posts/finnishforestai-lidar-blog.html#deriving-forest-structure-metrics",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "Deriving forest-structure metrics",
+    "text": "Deriving forest-structure metrics\nThe point cloud can also be summarised statistically.\nFor a forest grid cell or analysis plot, useful LiDAR-derived variables may include:\n\nmean vegetation height;\nmedian height;\nheight percentiles such as P25, P50, P75, and P95;\nmaximum observed height;\ncanopy cover above a selected threshold;\npoint density;\nproportions of points in different vertical layers; and\nmeasures of vertical height variability.\n\nThe 95th percentile of vegetation height (P95) is particularly useful because it describes the upper canopy while being less sensitive than the single highest point to isolated outliers.\nInstead of treating an entire forest as one observation, the study area can be divided into spatial cells. For each cell, FinnishForestAI can construct a feature table such as:\n\n\n\nCell\nMean height\nP95 height\nCanopy cover\nPoint density\n\n\n\n\n1\n11.8\n21.4\n0.71\n0.49\n\n\n2\n8.9\n17.2\n0.53\n0.52\n\n\n3\n14.1\n24.8\n0.82\n0.47\n\n\n\nThis transformation is important because it connects a complex three-dimensional point cloud with familiar statistical and machine-learning workflows."
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html#where-machine-learning-enters-the-workflow",
+    "href": "posts/finnishforestai-lidar-blog.html#where-machine-learning-enters-the-workflow",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "Where machine learning enters the workflow",
+    "text": "Where machine learning enters the workflow\nLiDAR itself is not AI. It is a remote-sensing measurement technology.\nAI becomes relevant when LiDAR-derived observations are used to build models for classification, prediction, segmentation, or decision support.\nIn FinnishForestAI, the R workflow is designed so that point-cloud processing produces structured features that can be passed to machine-learning tools such as ranger, an efficient Random Forest implementation in R.\nA conceptual workflow is:\nLiDAR → preprocessing → height normalization → forest metrics → machine-learning features → model\nFor example, a model could use variables such as P95 height, mean height, canopy cover, point density, and vertical variability. With appropriate independent reference data, these features could be evaluated for predicting forest attributes.\nThis distinction is important: estimates of properties such as timber volume, biomass, dominant height, stem density, or tree-species composition require suitable ground-truth or reference data and proper validation. A machine-learning model should not be treated as a forestry measurement simply because it can be trained on LiDAR-derived features.\nRandom Forest provides a useful baseline because it can model nonlinear relationships and interactions while remaining relatively easy to inspect. More advanced approaches could later include gradient boosting, deep learning, or architectures designed directly for three-dimensional point clouds."
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html#why-finland-is-an-interesting-test-environment",
+    "href": "posts/finnishforestai-lidar-blog.html#why-finland-is-an-interesting-test-environment",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "Why Finland is an interesting test environment",
+    "text": "Why Finland is an interesting test environment\nLiDAR is already an important part of Finland’s forest-information infrastructure.\nThe Finnish Forest Centre describes a forest-resource inventory process that combines sample-plot measurements, airborne laser scanning, and aerial photography [3]. Laser scanning provides three-dimensional information about trees and terrain, while aerial photography contributes information useful for tasks such as tree-species interpretation [3].\nThe Forest Centre’s current remote-sensing inventory process uses a 16 × 16 metre grid for tree-stand interpretation and develops statistical models using field sample plots together with remote-sensing information [3].\nThis provides an important methodological lesson for AI projects: remote-sensing data become substantially more useful when they are combined with reliable reference measurements.\nFinnish research has also demonstrated the long-standing role of airborne laser scanning in forest inventory. Studies have investigated area-based forest inventory, individual-tree features, and statistical estimation of forest variables using airborne laser-scanning data in Finnish and Nordic environments [6]."
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html#why-use-r",
+    "href": "posts/finnishforestai-lidar-blog.html#why-use-r",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "Why use R?",
+    "text": "Why use R?\nR has a mature ecosystem for spatial analysis, statistical modelling, reproducible research, and scientific communication.\nFor FinnishForestAI, several components are particularly useful:\n\nlidR for airborne LiDAR point-cloud processing;\nterra for raster operations;\nsf for vector spatial data;\nranger for Random Forest modelling;\nggplot2 for statistical visualisation; and\nQuarto for combining narrative, code, figures, methods, and references in a reproducible document.\n\nThe lidR package was explicitly designed for airborne laser-scanning analysis and integrates with the wider R geospatial ecosystem [4] [5].\nThis makes it possible to keep the analysis pipeline, methodological explanation, figures, and reproducibility information together rather than separating code from documentation."
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html#reproducibility-with-quarto-and-github",
+    "href": "posts/finnishforestai-lidar-blog.html#reproducibility-with-quarto-and-github",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "Reproducibility with Quarto and GitHub",
+    "text": "Reproducibility with Quarto and GitHub\nA central aim of FinnishForestAI is reproducibility.\nA Quarto-based workflow allows the analysis to be documented as an executable scientific report. Code can be displayed alongside interpretation, while outputs such as canopy maps, height distributions, and model summaries can be regenerated from the underlying analysis.\nThe same project can be hosted publicly on GitHub, while GitHub Actions can render and publish the Quarto website automatically.\nA simplified project structure is:\nFinnishForestAI/\n├── index.qmd\n├── _quarto.yml\n├── r/\n│   └── forest_lidar_analysis.R\n├── data/\n├── outputs/\n├── references.bib\n└── .github/\n    └── workflows/\n        └── quarto-publish.yml\nLarge .las and .laz files should generally not be stored directly in a Git repository. Instead, the repository can provide instructions for obtaining the original NLS data and can include small demonstration datasets or derived outputs where licensing and file size permit.\nThe NLS 0.5 p laser-scanning product is available as open data under CC BY 4.0, subject to attribution requirements [1] [2]."
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html#important-limitations",
+    "href": "posts/finnishforestai-lidar-blog.html#important-limitations",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "Important limitations",
+    "text": "Important limitations\nWorking with open LiDAR does not remove the need for careful methodological choices.\nFirst, the open NLS 0.5 p dataset is intentionally thinned from denser 5 points/m² laser-scanning data [1]. A density of approximately 0.5 points/m² can support many area-based analyses, but it provides less detailed representation of individual trees and fine canopy structure than denser point clouds.\nSecond, NLS point classifications are automatic. The product documentation explicitly notes that automatic classifications are not expected to be perfect and that users may need to filter or classify the data according to their own requirements [1].\nThird, remote-sensing models must be validated. A visually convincing canopy map does not automatically imply that predictions of forestry variables are accurate.\nFinally, forests are dynamic. Tree growth, harvesting, storms, management operations, and differences between acquisition dates can create discrepancies when LiDAR is combined with other spatial or forest-resource datasets."
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html#toward-a-finnish-forestry-ai-workflow",
+    "href": "posts/finnishforestai-lidar-blog.html#toward-a-finnish-forestry-ai-workflow",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "Toward a Finnish forestry AI workflow",
+    "text": "Toward a Finnish forestry AI workflow\nThe next step for FinnishForestAI is to move from a general LiDAR-processing prototype toward a documented Finnish case study.\nA future workflow could combine:\nNLS LiDAR + Finnish Forest Centre forest-resource information + aerial or satellite imagery\nfollowed by:\nspatial harmonisation → feature engineering → model training → independent validation → interactive visualisation\nPotential research questions include:\n\nHow well do open 0.5 p LiDAR metrics describe canopy structure?\nWhich height and density metrics are most informative for different forest conditions?\nHow does grid resolution affect model performance?\nWhat is gained by combining LiDAR with optical imagery?\nHow transferable are models between different Finnish forest regions?\nHow closely can an open-source workflow reproduce forest-structure variables available from established inventory systems?\n\nThese questions move the project beyond simply visualising a point cloud. They connect geospatial computing, remote sensing, forest science, machine learning, and reproducible research."
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html#conclusion",
+    "href": "posts/finnishforestai-lidar-blog.html#conclusion",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "Conclusion",
+    "text": "Conclusion\nFinnishForestAI demonstrates how open Finnish LiDAR data can provide a foundation for learning and experimenting with modern geospatial AI workflows.\nThe most important transformation is not from LiDAR directly to AI, but through a sequence of carefully defined analytical steps:\n3D points → terrain → normalized vegetation heights → forest metrics → spatial features → validated models\nFinland’s open geospatial infrastructure makes it possible to explore these methods using real national datasets, while R provides a strong environment for point-cloud processing, statistical modelling, and reproducible reporting.\nFor an open-source project, this combination is particularly valuable: the data source is documented, the analytical decisions can be inspected, the code can be reproduced, and model outputs can be evaluated rather than treated as black-box predictions.\nFinnishForestAI is therefore best understood as a bridge between LiDAR remote sensing, reproducible geospatial software, and AI-assisted forest analysis."
+  },
+  {
+    "objectID": "posts/finnishforestai-lidar-blog.html#references",
+    "href": "posts/finnishforestai-lidar-blog.html#references",
+    "title": "FinnishForestAI: Exploring Finnish Forests with LiDAR and AI in R",
+    "section": "References",
+    "text": "References\n [1] National Land Survey of Finland. Laser scanning data 0.5 p. Product description. https://www.maanmittauslaitos.fi/en/maps-and-spatial-data/datasets-and-interfaces/product-descriptions/laser-scanning-data-05-p\n [2] National Land Survey of Finland. Publication rights. Open geospatial datasets and CC BY 4.0 licensing. https://www.maanmittauslaitos.fi/en/about-nls/organisation/publications-and-brochures/publication-rights\n [3] Finnish Forest Centre. Collection of forest resource information. https://www.metsakeskus.fi/en/open-forest-and-nature-information/collection-of-forest-resource-information\n [4] Roussel, J.-R., Auty, D., Coops, N. C., Tompalski, P., Goodbody, T. R. H., Sánchez Meador, A., Bourdon, J.-F., de Boissieu, F., & Achim, A. (2020). lidR: An R package for analysis of Airborne Laser Scanning (ALS) data. Remote Sensing of Environment, 251, 112061. https://doi.org/10.1016/j.rse.2020.112061\n [5] Roussel, J.-R., Goodbody, T. R. H., & Tompalski, P. The lidR package: A guide to the lidR package. https://r-lidar.github.io/lidRbook/\n [6] Kauranne, T., Pyankov, S., Junttila, V., Kedrov, A., Tarasov, A., Kuzmin, A., Peuhkurinen, J., Villikka, M., Vartio, V.-M., & Sirparanta, S. (2017). Airborne Laser Scanning Based Forest Inventory: Comparison of Experimental Results for the Perm Region, Russia and Prior Results from Finland. Forests, 8(3), 72. https://doi.org/10.3390/f8030072"
+  },
+  {
+    "objectID": "posts/Bibliographic_Data_Science.html",
+    "href": "posts/Bibliographic_Data_Science.html",
+    "title": "Tracing the Evolution of Knowledge Through Bibliographic Data Science",
+    "section": "",
+    "text": "The transformation of European book culture between 1500 and 1800 offers a remarkable window into the evolution of knowledge, language, and public discourse. Research in bibliographic data science has shown how large-scale library catalogues and national bibliographies can be treated not only as tools for locating books, but also as datasets for studying long-term transformations in publishing and knowledge production [1] [2].\nAt the heart of this work lies the use of reproducible, quantitative methods to analyse historical publishing through bibliographic metadata. Large-scale studies have combined records from the Finnish and Swedish national bibliographies, the English Short-Title Catalogue (ESTC), and the Heritage of the Printed Book Database (HPB), creating an empirical foundation for comparative research on European print culture [1].\nThe scale and heterogeneity of these collections require careful metadata harmonisation. Publication places, languages, dates, document formats, authorship information, and other fields may be recorded differently across catalogues and historical periods. Data cleaning, enrichment, quality assessment, and transparent documentation are therefore essential before statistical conclusions can be drawn [1] [3].\nOnce harmonised, these sources can help researchers investigate the geographical spread of publishing centres, changes in vernacular languages, shifts in book formats, and other aspects of printed material. These analyses illustrate how computational methods can complement traditional book-historical scholarship rather than replace close historical interpretation [1].\nA particularly interesting example is the development of printing in Sweden and Finland. Finland’s first printing press began operating in Turku in 1642, shortly after the foundation of the Royal Academy of Turku in 1640 [4]. Quantitative analysis of the national bibliographies of Finland and Sweden shows that printing developed unevenly across the Swedish realm and was influenced by political events, regional differences, universities, and competing centres of intellectual activity [2].\nBook format also provides evidence of broader changes in print culture. Studies of bibliographic metadata identify the growing role of smaller formats such as octavo during the eighteenth century, alongside changes in the genres and circulation of printed material [1] [2].\nThese developments unfolded alongside political and cultural transformations. One important example was Sweden’s Freedom of the Press Act of 1766, a landmark in the history of freedom of expression and access to public information [5].\nBeyond quantifying publication trends, bibliographic data science also exposes structural challenges in the bibliographical landscape. National and institutional bibliographies were created at different times for different purposes and often use differing cataloguing standards, classifications, languages, and levels of description. Apparent historical patterns can therefore sometimes reflect catalogue construction or missing metadata rather than historical reality. Reproducibility, source criticism, data-quality assessment, and transparent documentation are central methodological requirements [1] [3].\nThese challenges have motivated international collaboration. The DARIAH-EU Bibliographical Data Working Group (BiblioData WG) brings together researchers, bibliographic data providers, cultural-heritage organisations, and infrastructure specialists interested in improving the creation, curation, interoperability, and research use of bibliographic data [6].\nLarge-scale quantitative analysis does not replace qualitative scholarship. Instead, it can provide new evidence, identify patterns worth investigating, test historical assumptions, and reveal developments that may be difficult to observe through individual sources alone [1] [2] [3].\nFor readers interested in this area, the Helsinki Computational History Group provides further examples of computational approaches to book history, public discourse, bibliographic metadata, and historical cultural data [7]."
+  },
+  {
+    "objectID": "posts/Bibliographic_Data_Science.html#references",
+    "href": "posts/Bibliographic_Data_Science.html#references",
+    "title": "Tracing the Evolution of Knowledge Through Bibliographic Data Science",
+    "section": "References",
+    "text": "References\n[1] Lahti, L., Marjanen, J. P., Roivainen, H. H. M., & Tolonen, M. S. (2019). Bibliographic Data Science and the History of the Book (c. 1500–1800). Cataloging & Classification Quarterly, 57(1), 5–23. https://doi.org/10.1080/01639374.2018.1543747\n[2] Tolonen, M., Lahti, L., Roivainen, H., & Marjanen, J. (2019). A Quantitative Approach to Book-Printing in Sweden and Finland, 1640–1828. Historical Methods: A Journal of Quantitative and Interdisciplinary History, 52(1), 57–78. https://doi.org/10.1080/01615440.2018.1526657\n[3] Lahti, L., Vaara, V., Marjanen, J., & Tolonen, M. (2019). Best practices in bibliographic data science. In Proceedings of the Research Data and Humanities (RDHUM) 2019 Conference: Data, Methods and Tools (pp. 57–65). University of Oulu.\n[4] Universal Short Title Catalogue. Full Coverage of Finnish Printing, 1642–1650 Added. University of St Andrews. https://www.ustc.ac.uk/news/full-coverage-of-finnish-printing-1642-1650-added\n[5] Government Offices of Sweden. (2016). Freedom of the Press: 250th Anniversary of the Swedish Freedom of the Press Act. https://www.government.se/articles/2016/12/freedom-of-the-press-lars-danielsson-on-the-250th-anniversary/\n[6] Łubocki, J. M., Herden, E., & Siwecka, D. (2021). Activities and projects of the Bibliographical Data Working Group (DARIAH-EU). Bibliosphere, 2, 103–107. https://doi.org/10.20913/1815-3186-2021-2-103-107\n[7] Helsinki Computational History Group. Research outputs and publications. University of Helsinki. https://researchportal.helsinki.fi/en/projects/helsinki-computational-history-group/publications/"
+  },
+  {
+    "objectID": "Resume.html",
+    "href": "Resume.html",
+    "title": "CV",
+    "section": "",
+    "text": "For the best reading experience, open the PDF directly or view it below.\n\nOpen CV as PDF\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I’m happy to hear about research collaborations, data science projects, open-source software, AI-assisted research workflows, and technical opportunities."
+  },
+  {
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Contact",
+    "section": "Get in touch",
+    "text": "Get in touch\n\nEmail: akewak84@gmail.com\nGitHub: github.com/ake123\nLinkedIn: Akewak Jeba\nUniversity profile: University of Turku"
+  },
+  {
+    "objectID": "contact.html#what-i-work-on",
+    "href": "contact.html#what-i-work-on",
+    "title": "Contact",
+    "section": "What I work on",
+    "text": "What I work on\nData science · Machine learning · AI/LLMs · R/Python · Scientific software · Cultural heritage data · Bioinformatics · Reproducible workflows · APIs · Research infrastructure"
+  },
+  {
+    "objectID": "posts/microbiome-graph-learning.html",
+    "href": "posts/microbiome-graph-learning.html",
+    "title": "Graph Learning for Microbiome Research",
+    "section": "",
+    "text": "Can microbial communities be represented as graphs? Absolutely.\nMicrobiomes consist of complex communities in which microorganisms coexist, compete, cooperate, and respond to their environment. Network-based approaches provide one way to represent these relationships and investigate patterns that may be difficult to identify from abundance tables alone [1].\nA simple microbiome graph might contain:\nAn important distinction is that an observed correlation or co-occurrence should not automatically be interpreted as a direct biological interaction. Microbiome sequencing data are compositional, and traditional correlation methods can generate spurious associations. Methods such as SPIEC-EASI were developed to infer sparse microbial association networks while accounting for the compositional nature of microbiome data [2]."
+  },
+  {
+    "objectID": "posts/microbiome-graph-learning.html#from-networks-to-graph-neural-networks",
+    "href": "posts/microbiome-graph-learning.html#from-networks-to-graph-neural-networks",
+    "title": "Graph Learning for Microbiome Research",
+    "section": "From Networks to Graph Neural Networks",
+    "text": "From Networks to Graph Neural Networks\nTraditional network analysis can reveal communities, highly connected taxa, central nodes, and patterns of association. Tools such as igraph provide algorithms for representing, analysing, and visualising complex networks in R [3].\nGraph Neural Networks (GNNs) extend this idea by allowing machine-learning models to learn directly from graph-structured data. Instead of treating each microbial feature independently, a GNN can combine information about a node with information from its neighbouring nodes. Graph convolutional networks, for example, learn representations that incorporate both node features and local graph structure [4].\nThis makes graph learning particularly interesting for microbiome research, where relationships among microbial taxa may contain useful information in addition to their individual abundances.\nGraph-based learning has already been explored in microbiome applications, including microbe–disease association prediction [5] and interpretable graph representation learning for time-varying microbiome data [6]."
+  },
+  {
+    "objectID": "posts/microbiome-graph-learning.html#a-possible-workflow",
+    "href": "posts/microbiome-graph-learning.html#a-possible-workflow",
+    "title": "Graph Learning for Microbiome Research",
+    "section": "A Possible Workflow",
+    "text": "A Possible Workflow\nA graph-learning workflow for microbiome data could involve:\n\nPreprocessing microbial abundance data\nConstructing or inferring a microbial association network\nRepresenting taxa as graph nodes\nAdding abundance, taxonomy, functional, or environmental information as node features\nAnalysing the graph using traditional network methods\nTraining a graph-learning model for classification, prediction, or representation learning\nInterpreting important taxa, communities, or graph structures\n\nIn R, igraph can be used for network construction, analysis, community detection, and visualization [3]. Deep-learning frameworks such as torch provide tensor operations and neural-network components that can support custom graph-learning implementations.\nThe broader field of microbiome machine learning has expanded considerably, with deep-learning approaches being explored for phenotype prediction, classification, representation learning, and biological interpretation [7].\nGraph learning therefore offers an interesting direction because it provides a framework for considering not only which microbes are present, but also how relationships among microbes may contribute to the structure and behaviour of microbial communities. At the same time, computationally inferred edges should be treated as hypotheses about associations rather than automatically as experimentally confirmed ecological interactions [1] [2]."
+  },
+  {
+    "objectID": "posts/microbiome-graph-learning.html#references",
+    "href": "posts/microbiome-graph-learning.html#references",
+    "title": "Graph Learning for Microbiome Research",
+    "section": "References",
+    "text": "References\n[1] Faust, K., & Raes, J. (2012). Microbial interactions: from networks to models. Nature Reviews Microbiology, 10, 538–550. https://doi.org/10.1038/nrmicro2832\n[2] Kurtz, Z. D., Müller, C. L., Miraldi, E. R., Littman, D. R., Blaser, M. J., & Bonneau, R. A. (2015). Sparse and compositionally robust inference of microbial ecological networks. PLOS Computational Biology, 11(5), e1004226. https://doi.org/10.1371/journal.pcbi.1004226\n[3] Csárdi, G., & Nepusz, T. (2006). The igraph software package for complex network research. InterJournal, Complex Systems, 1695. https://igraph.org\n[4] Kipf, T. N., & Welling, M. (2017). Semi-supervised classification with graph convolutional networks. International Conference on Learning Representations (ICLR). https://arxiv.org/abs/1609.02907\n[5] Gong, H., You, X., Jin, M., Meng, Y., Zhang, H., Yang, S., & Xu, J. (2022). Graph neural network and multi-data heterogeneous networks for microbe-disease prediction. Frontiers in Microbiology, 13, 1077111. https://doi.org/10.3389/fmicb.2022.1077111\n[6] Melnyk, K., Weimann, K., & Conrad, T. O. F. (2023). Understanding microbiome dynamics via interpretable graph representation learning. Scientific Reports, 13, 2058. https://doi.org/10.1038/s41598-023-29098-7\n[7] Hernández Medina, R., Kutuzova, S., Nielsen, K. N., et al. (2022). Machine learning and deep learning applications in microbiome research. ISME Communications, 2, 98. https://doi.org/10.1038/s43705-022-00182-9"
+  },
+  {
+    "objectID": "posts/eCommerce.html",
+    "href": "posts/eCommerce.html",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "",
+    "text": "In today’s digital economy, an effective eCommerce platform needs to balance usability, maintainability, security, performance, and the ability to evolve as business requirements change. This project focuses on building an end-to-end eCommerce solution using open-source technologies, with Drupal Commerce providing the central commerce framework [1].\nDrupal Commerce is designed as an extensible eCommerce framework built on Drupal. It provides core functionality for products, carts, checkout, customers, orders, payments, pricing, promotions, and stores, while allowing developers to extend these components for different business requirements [1]."
+  },
+  {
+    "objectID": "posts/eCommerce.html#why-this-project",
+    "href": "posts/eCommerce.html#why-this-project",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "Why This Project?",
+    "text": "Why This Project?\nRather than building a storefront as a collection of isolated features, the goal is to establish a flexible technical foundation that can support both current requirements and future development.\nThe project is designed to:\n\nProvide a flexible and customizable online storefront\nIntegrate payment gateways using Drupal Commerce’s extensible payment architecture [2]\nSupport product catalogues, orders, checkout processes, and customer accounts [1]\nGenerate readable and structured URLs using Drupal’s Pathauto functionality [3]\nProvide a responsive experience across desktop and mobile devices [4]\nLay the groundwork for analytics, marketing integrations, multilingual content, and additional commerce functionality\n\nDrupal Commerce is particularly useful for this approach because it provides foundational commerce components without forcing every project into the same store structure [1]."
+  },
+  {
+    "objectID": "posts/eCommerce.html#the-tech-stack",
+    "href": "posts/eCommerce.html#the-tech-stack",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "The Tech Stack",
+    "text": "The Tech Stack\n\nKey Technologies\n\nDrupal Commerce — provides the central commerce architecture, including products, carts, checkout, orders, payments, customers, pricing, and promotions [1].\nPathauto & URL Aliases — automatically creates human-readable URL aliases based on configurable patterns [3]. Google also recommends simple, descriptive URL structures where possible [5].\nCustom Backend Features — Drupal Commerce can be extended through Drupal modules, configuration, events, entities, and custom code [1].\nPayment Gateway Integration — Drupal Commerce provides a pluggable payment-gateway architecture supporting different providers and payment flows [2].\nResponsive Frontend — Google recommends responsive web design as a maintainable approach for serving content across screen sizes [4].\n\n\n\nDevelopment Practices\n\nVersion control with Git — supports distributed version control, project history, and collaborative development [6].\nAutomated deployments — reduce repetitive manual release steps and improve consistency across environments.\nContainerization with Docker — packages applications and dependencies into isolated, portable environments [7].\nModular code structure — allows functionality to evolve without rebuilding the entire application [1]."
+  },
+  {
+    "objectID": "posts/eCommerce.html#progress-so-far",
+    "href": "posts/eCommerce.html#progress-so-far",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "Progress So Far",
+    "text": "Progress So Far\nCompleted milestones include:\n\nDrupal Commerce setup and configuration\nProduct catalogue structure established\nURL aliases generated for products, stores, and important content\nAdministrative workflows configured for store management\nLocal development and testing environments established\n\n\nNext Steps\n\nFrontend polishing for a branded and intuitive storefront\nExtending order-processing and payment functionality\nAdding analytics and performance monitoring\nStrengthening application security and GDPR-related practices\n\nPerformance can be evaluated using modern web-performance indicators such as Google’s Core Web Vitals, which measure loading performance, responsiveness, and visual stability [8].\nSecurity should also be treated as an ongoing development process. The OWASP Top 10 provides a widely used starting point for understanding major web-application security risks [9], while Drupal maintains a formal security-advisory process for vulnerabilities affecting the ecosystem [10]."
+  },
+  {
+    "objectID": "posts/eCommerce.html#privacy-and-gdpr",
+    "href": "posts/eCommerce.html#privacy-and-gdpr",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "Privacy and GDPR",
+    "text": "Privacy and GDPR\nBecause an eCommerce platform may process customer information such as names, addresses, account details, and order information, privacy must be considered throughout the system design.\nUnder the EU General Data Protection Regulation (GDPR), organisations processing personal data must follow principles including lawfulness, fairness and transparency, purpose limitation, data minimisation, accuracy, storage limitation, integrity and confidentiality, and accountability [11].\nFuture analytics, customer-management, marketing, and personalization features should therefore be designed with privacy considerations from the beginning rather than added only after production deployment."
+  },
+  {
+    "objectID": "posts/eCommerce.html#looking-ahead",
+    "href": "posts/eCommerce.html#looking-ahead",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nThe architecture is intended to provide a foundation for capabilities such as:\n\nPersonalized shopping experiences\nMarketing and customer-management integrations\nAnalytics and performance monitoring\nSocial sharing and community engagement\nMultilingual storefronts\nAdditional payment and fulfilment options\nScalable infrastructure for future growth\n\nDrupal Commerce’s flexible architecture is useful here because commerce functionality can be combined with Drupal’s broader content-management capabilities and extended with project-specific modules and third-party services [1]."
+  },
+  {
+    "objectID": "posts/eCommerce.html#final-thoughts",
+    "href": "posts/eCommerce.html#final-thoughts",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "Final Thoughts",
+    "text": "Final Thoughts\nBuilding an eCommerce system involves much more than creating product pages and connecting a payment provider. Architecture, maintainability, security, privacy, performance, responsive design, deployment, and data management all influence whether a platform remains useful as requirements evolve.\nBy combining Drupal Commerce with structured URL management, Git-based development, Docker-based environments, responsive design, security practices, and privacy-aware development, this project establishes a foundation that can be expanded incrementally rather than repeatedly rebuilt [1] [5] [7] [9]."
+  },
+  {
+    "objectID": "posts/eCommerce.html#references",
+    "href": "posts/eCommerce.html#references",
+    "title": "Building the Foundation for Our eCommerce Platform",
+    "section": "References",
+    "text": "References\n[1] Drupal Commerce. Drupal Commerce Documentation. https://docs.drupalcommerce.org/\n[2] Drupal Commerce. Payments and Payment Gateways. Drupal Commerce Developer Guide. https://docs.drupalcommerce.org/\n[3] Drupal Association. Pathauto. Drupal.org. https://www.drupal.org/project/pathauto\n[4] Google Search Central. Mobile-first indexing best practices. https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing\n[5] Google Search Central. URL structure best practices for Google Search. https://developers.google.com/search/docs/crawling-indexing/url-structure\n[6] Chacon, S., & Straub, B. Pro Git. Git Project. https://git-scm.com/book/en/v2\n[7] Docker. Docker overview. Docker Documentation. https://docs.docker.com/get-started/docker-overview/\n[8] Google Search Central. Understanding Core Web Vitals and Google search results. https://developers.google.com/search/docs/appearance/core-web-vitals\n[9] OWASP Foundation. OWASP Top 10. https://owasp.org/www-project-top-ten/\n[10] Drupal Security Team. Security advisories. Drupal.org. https://www.drupal.org/security\n[11] European Commission. What data can we process and under which conditions? https://commission.europa.eu/law/law-topic/data-protection/rules-business-and-organisations/principles-gdpr_en"
+  },
+  {
+    "objectID": "posts/LimROTS.html",
+    "href": "posts/LimROTS.html",
+    "title": "LimROTS: A New Tool for Reliable Differential Expression Analysis in Proteomics",
+    "section": "",
+    "text": "Differential expression analysis is central to modern omics research, helping scientists identify proteins, genes, or other molecular features associated with different biological conditions. In proteomics, these analyses can be complicated by technical variation, batch effects, small sample sizes, and biological covariates such as age and sex [1] [2].\nTo address these challenges, our team developed LimROTS, an R/Bioconductor package that combines two complementary statistical approaches: the flexible linear modelling and empirical Bayes framework used by limma, and the reproducibility-optimized statistical approach implemented in ROTS [1] [2] [3].\nThe limma framework uses linear models to accommodate complex experimental designs and empirical Bayes methods to improve statistical inference by borrowing information across many molecular features [2]. ROTS, in contrast, optimizes a ranking statistic according to the reproducibility of results across bootstrap samples, allowing the statistic to adapt to the characteristics of a dataset [3] [4].\nLimROTS integrates these ideas into a moderated ranking statistic. This enables reproducibility-optimized differential expression analysis while allowing technical and biological covariates to be incorporated into the statistical model [1].\nThe method was validated using 21 gold-standard proteomics spike-in datasets representing different protein mixtures, mass-spectrometry instruments, and experimental techniques. Its performance was compared with commonly used approaches including limma, ROTS, MSstats, DEqMS, DEP, SAM, ANOVA, and t-tests [1].\nAcross diverse benchmarking settings, LimROTS showed strong performance and, in the published evaluation, outperformed comparison differential-expression methods across several important measures and complex experimental contexts [1].\nWe also evaluated LimROTS using clinical Alzheimer’s disease proteomics data. This case study illustrated how the method can be applied to biologically complex datasets where technical and clinical covariates are important considerations [1].\nLimROTS is openly available as an R/Bioconductor package and supports standard Bioconductor data structures such as SummarizedExperiment, helping it integrate with existing omics analysis workflows [1] [5].\nThe method was developed and benchmarked primarily for proteomics, while the authors note potential relevance to other high-dimensional omics domains such as transcriptomics and metabolomics, subject to further validation [1].\nExplore LimROTS at: https://bioconductor.org/packages/LimROTS"
+  },
+  {
+    "objectID": "posts/LimROTS.html#references",
+    "href": "posts/LimROTS.html#references",
+    "title": "LimROTS: A New Tool for Reliable Differential Expression Analysis in Proteomics",
+    "section": "References",
+    "text": "References\n[1] Anwar, A. M., Jeba, A., Lahti, L., & Coffey, E. (2025). LimROTS: a hybrid method integrating empirical Bayes and reproducibility-optimized statistics for robust differential expression analysis. Bioinformatics, 41(12), btaf570. https://doi.org/10.1093/bioinformatics/btaf570\n[2] Ritchie, M. E., Phipson, B., Wu, D., Hu, Y., Law, C. W., Shi, W., & Smyth, G. K. (2015). limma powers differential expression analyses for RNA-sequencing and microarray studies. Nucleic Acids Research, 43(7), e47. https://doi.org/10.1093/nar/gkv007\n[3] Suomi, T., Seyednasrollah, F., Jaakkola, M. K., Faux, T., & Elo, L. L. (2017). ROTS: An R package for reproducibility-optimized statistical testing. PLOS Computational Biology, 13(5), e1005562. https://doi.org/10.1371/journal.pcbi.1005562\n[4] Elo, L. L., Filén, S., Lahesmaa, R., & Aittokallio, T. (2008). Reproducibility-optimized test statistic for ranking genes in microarray studies. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 5(3), 423–431. https://doi.org/10.1109/TCBB.2007.1078\n[5] Johnson, E. C. B., Dammer, E. B., Duong, D. M., et al. (2020). Large-scale proteomic analysis of Alzheimer’s disease brain and cerebrospinal fluid reveals early changes in energy metabolism associated with microglia and astrocyte activation. Nature Medicine, 26, 769–780. https://doi.org/10.1038/s41591-020-0815-6\n[6] Bioconductor. LimROTS: A Hybrid Method Integrating Empirical Bayes and Reproducibility-Optimized Statistics for Robust Differential Expression Analysis. Bioconductor package. https://bioconductor.org/packages/LimROTS"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Akewak Jeba",
+    "section": "",
+    "text": "Data science · AI · Open science\n      I build research tools that turn complex data into usable knowledge.\n      I’m Akewak Jeba, a data scientist and scientific software developer at the intersection of artificial intelligence, cultural heritage, computational biology, and reproducible research.\n      $ whoami → data scientist_\n      \n        Explore projects →\n        View CV ↗\n        Contact me\n      \n    \n    \n      \n      R · Python\n      AI + Research\n      Open Source\n    \n  \n\n  \n    4×automated refreshes each day\n    —public GitHub repositories\n    —GitHub followers\n    loading…last automated refresh\n  \n\n\n\n  What I do\n  Research engineering from data access to reproducible analysis.\n  My work combines statistical computing, machine learning, APIs, software engineering, and open research infrastructure. I focus on making complex datasets easier to retrieve, analyze, validate, and reuse.\n  \n    \n      ◈\n      AI-assisted research\n      Designing workflows where AI supports data retrieval, transformation, statistical analysis, visualization, and reproducible reporting while keeping decisions inspectable.\n    \n    \n      ⌘\n      Scientific software\n      Building open-source R tooling and data pipelines for cultural heritage metadata, bibliographic data, omics, and interactive analysis.\n    \n    \n      ◎\n      Reproducible data science\n      Connecting APIs, structured metadata, statistical methods, CI/CD, documentation, and scalable computing into research workflows that others can rerun.\n    \n  \n\n\n\n  Selected work\n  Open tools and research projects.\n  \n    \n      Cultural heritage\n      finna\n      An R interface for programmatic access to the Finna API, enabling reproducible retrieval and analysis of Finnish library, archive, and museum metadata.\n      Documentation ↗Source ↗\n    \n    \n      Linked data\n      finto\n      Tools for working with Finnish ontology and vocabulary services, supporting concept search, semantic enrichment, and multilingual cultural heritage workflows.\n      Project details →\n    \n    \n      Bibliographic data\n      fennica\n      Computational access and analysis workflows for Finnish national bibliography data, supporting large-scale studies of publishing and literary history.\n      Project details →\n    \n    \n      Bioinformatics\n      LimROTS + iSEEtree\n      Contributions to statistical and interactive tools for robust differential expression analysis and exploration of hierarchical biological data.\n      Publications →\n    \n  \n\n\n\n  Live GitHub\n  Repository activity, refreshed automatically.\n  A scheduled GitHub Action refreshes this portfolio four times per day, records the update in version control, and republishes the site. The cards below are populated from the latest public GitHub data.\n  \n    Loading GitHub activity…Live repository information will appear here.\n  \n\n\n\n  Toolbox\n  Technologies I use to ship research.\n  \n    RPythonSQLQuartoShinyMachine LearningLLMsNLPDockerGitHub ActionsLinuxHPCAWSAPIsPostgreSQLJavaScript\n  \n\n\n\n  \n    Interested in research, data, or scientific software?I’m always interested in useful collaborations where rigorous data science and good software engineering meet.\n    Start a conversation →\n  \n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "GITHUB-ACTIONS-SETUP.html",
+    "href": "GITHUB-ACTIONS-SETUP.html",
+    "title": "Akewak Jeba — Portfolio",
+    "section": "",
+    "text": "A Quarto-based personal research portfolio with a live GitHub activity layer and automated GitHub Pages deployment.\n\n\n\nRedesigned responsive homepage with modern cards, metrics, project highlights, and dark mode.\nLive GitHub repository/profile data loaded from data/site-pulse.json.\nAutomated refresh 4 times per day using GitHub Actions.\nEvery scheduled refresh updates real website data and creates a commit on master.\nThe same workflow renders the Quarto site and publishes it to gh-pages.\nImproved Projects, Publications, Writing, CV, and Contact pages.\nRemoved the duplicated Tailwind CDN dependency and replaced it with a self-contained custom design system.\n\n\n\n\nThe workflow runs at 03:17, 09:17, 15:17, and 21:17 Europe/Helsinki time. GitHub handles daylight-saving changes through the workflow timezone setting.\nGitHub Actions cron is defined in .github/workflows/daily-git-commits.yml.\n\n\n\nScheduled commits are authored with:\n\nname: repository owner (ake123)\nemail: akeketema@yahoo.com (the same author email already used by your existing manual commits)\n\nFor GitHub to attribute these commits to your contribution graph, the commit email must be associated with your GitHub account and the commits must land on the repository’s default branch. Because this email is already used in the repository’s existing manual commits, it is a better attribution choice than a generic bot address. If you later change your verified GitHub email, update this workflow value too.\n\n\n\nInstall Quarto, then run:\nquarto preview\nTo test the live-data update locally:\npython3 scripts/update_site_pulse.py\n\n\n\nThe workflow publishes to the gh-pages branch. In GitHub repository settings, GitHub Pages should use the gh-pages branch as its source."
+  },
+  {
+    "objectID": "GITHUB-ACTIONS-SETUP.html#what-changed",
+    "href": "GITHUB-ACTIONS-SETUP.html#what-changed",
+    "title": "Akewak Jeba — Portfolio",
+    "section": "",
+    "text": "Redesigned responsive homepage with modern cards, metrics, project highlights, and dark mode.\nLive GitHub repository/profile data loaded from data/site-pulse.json.\nAutomated refresh 4 times per day using GitHub Actions.\nEvery scheduled refresh updates real website data and creates a commit on master.\nThe same workflow renders the Quarto site and publishes it to gh-pages.\nImproved Projects, Publications, Writing, CV, and Contact pages.\nRemoved the duplicated Tailwind CDN dependency and replaced it with a self-contained custom design system."
+  },
+  {
+    "objectID": "GITHUB-ACTIONS-SETUP.html#automated-schedule",
+    "href": "GITHUB-ACTIONS-SETUP.html#automated-schedule",
+    "title": "Akewak Jeba — Portfolio",
+    "section": "",
+    "text": "The workflow runs at 03:17, 09:17, 15:17, and 21:17 Europe/Helsinki time. GitHub handles daylight-saving changes through the workflow timezone setting.\nGitHub Actions cron is defined in .github/workflows/daily-git-commits.yml."
+  },
+  {
+    "objectID": "GITHUB-ACTIONS-SETUP.html#contribution-attribution",
+    "href": "GITHUB-ACTIONS-SETUP.html#contribution-attribution",
+    "title": "Akewak Jeba — Portfolio",
+    "section": "",
+    "text": "Scheduled commits are authored with:\n\nname: repository owner (ake123)\nemail: akeketema@yahoo.com (the same author email already used by your existing manual commits)\n\nFor GitHub to attribute these commits to your contribution graph, the commit email must be associated with your GitHub account and the commits must land on the repository’s default branch. Because this email is already used in the repository’s existing manual commits, it is a better attribution choice than a generic bot address. If you later change your verified GitHub email, update this workflow value too."
+  },
+  {
+    "objectID": "GITHUB-ACTIONS-SETUP.html#local-preview",
+    "href": "GITHUB-ACTIONS-SETUP.html#local-preview",
+    "title": "Akewak Jeba — Portfolio",
+    "section": "",
+    "text": "Install Quarto, then run:\nquarto preview\nTo test the live-data update locally:\npython3 scripts/update_site_pulse.py"
+  },
+  {
+    "objectID": "GITHUB-ACTIONS-SETUP.html#deployment",
+    "href": "GITHUB-ACTIONS-SETUP.html#deployment",
+    "title": "Akewak Jeba — Portfolio",
+    "section": "",
+    "text": "The workflow publishes to the gh-pages branch. In GitHub repository settings, GitHub Pages should use the gh-pages branch as its source."
+  }
+]
