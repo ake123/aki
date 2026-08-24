@@ -1,18 +1,27 @@
 {
-  "last_updated_utc": "2026-08-24T14:28:43Z",
-  "last_updated_helsinki": "2026-08-24T17:28:43+03:00",
-  "refresh_number": 24,
-  "refresh_slot_utc": "14:28",
+  "last_updated_utc": "2026-08-24T20:14:28Z",
+  "last_updated_helsinki": "2026-08-24T23:14:28+03:00",
+  "refresh_number": 26,
+  "refresh_slot_utc": "20:14",
   "api_status": "ok",
   "github": {
     "login": "ake123",
     "name": "ake",
     "followers": 5,
-    "public_repos": 122,
+    "public_repos": 123,
     "profile_url": "https://github.com/ake123",
     "profile_updated_at": "2026-08-24T08:28:52Z"
   },
   "repositories": [
+    {
+      "name": "aki",
+      "description": "https://ake123.github.io/aki/",
+      "url": "https://github.com/ake123/aki",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-24T19:33:33Z"
+    },
     {
       "name": "ake123",
       "description": "Open-source project",
@@ -20,16 +29,16 @@
       "language": null,
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-24T12:58:51Z"
+      "pushed_at": "2026-08-24T18:47:18Z"
     },
     {
-      "name": "aki",
-      "description": "https://ake123.github.io/aki/",
-      "url": "https://github.com/ake123/aki",
-      "language": "CSS",
+      "name": "FinnishForestAI",
+      "description": "Open-source project",
+      "url": "https://github.com/ake123/FinnishForestAI",
+      "language": "HTML",
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-24T08:32:37Z"
+      "pushed_at": "2026-08-24T18:31:09Z"
     },
     {
       "name": "ai-product-studio",
@@ -57,15 +66,6 @@
       "stars": 0,
       "forks": 0,
       "pushed_at": "2026-07-30T19:03:15Z"
-    },
-    {
-      "name": "QR_code",
-      "description": "Open-source project",
-      "url": "https://github.com/ake123/QR_code",
-      "language": "Python",
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2025-10-24T13:46:10Z"
     }
   ]
 }
