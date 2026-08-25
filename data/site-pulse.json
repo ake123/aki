@@ -1,8 +1,8 @@
 {
-  "last_updated_utc": "2026-08-24T20:14:28Z",
-  "last_updated_helsinki": "2026-08-24T23:14:28+03:00",
-  "refresh_number": 26,
-  "refresh_slot_utc": "20:14",
+  "last_updated_utc": "2026-08-25T02:47:59Z",
+  "last_updated_helsinki": "2026-08-25T05:47:59+03:00",
+  "refresh_number": 27,
+  "refresh_slot_utc": "02:47",
   "api_status": "ok",
   "github": {
     "login": "ake123",
@@ -14,22 +14,22 @@
   },
   "repositories": [
     {
-      "name": "aki",
-      "description": "https://ake123.github.io/aki/",
-      "url": "https://github.com/ake123/aki",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-08-24T19:33:33Z"
-    },
-    {
       "name": "ake123",
       "description": "Open-source project",
       "url": "https://github.com/ake123/ake123",
       "language": null,
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-24T18:47:18Z"
+      "pushed_at": "2026-08-25T01:35:25Z"
+    },
+    {
+      "name": "aki",
+      "description": "https://ake123.github.io/aki/",
+      "url": "https://github.com/ake123/aki",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-24T20:14:56Z"
     },
     {
       "name": "FinnishForestAI",
