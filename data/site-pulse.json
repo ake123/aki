@@ -1,8 +1,8 @@
 {
-  "last_updated_utc": "2026-08-26T08:26:26Z",
-  "last_updated_helsinki": "2026-08-26T11:26:26+03:00",
-  "refresh_number": 32,
-  "refresh_slot_utc": "08:26",
+  "last_updated_utc": "2026-08-26T14:31:30Z",
+  "last_updated_helsinki": "2026-08-26T17:31:30+03:00",
+  "refresh_number": 33,
+  "refresh_slot_utc": "14:31",
   "api_status": "ok",
   "github": {
     "login": "ake123",
@@ -20,7 +20,7 @@
       "language": null,
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-26T06:56:23Z"
+      "pushed_at": "2026-08-26T13:01:02Z"
     },
     {
       "name": "aki",
@@ -29,11 +29,11 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-26T02:55:04Z"
+      "pushed_at": "2026-08-26T08:26:59Z"
     },
     {
       "name": "FinnishForestAI",
-      "description": "Open-source project",
+      "description": "https://ake123.github.io/FinnishForestAI/",
       "url": "https://github.com/ake123/FinnishForestAI",
       "language": "HTML",
       "stars": 0,
