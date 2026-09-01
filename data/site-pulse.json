@@ -1,27 +1,18 @@
 {
-  "last_updated_utc": "2026-09-01T17:28:01Z",
-  "last_updated_helsinki": "2026-09-01T20:28:01+03:00",
-  "refresh_number": 51,
-  "refresh_slot_utc": "17:28",
+  "last_updated_utc": "2026-09-01T22:07:25Z",
+  "last_updated_helsinki": "2026-09-02T01:07:25+03:00",
+  "refresh_number": 57,
+  "refresh_slot_utc": "22:07",
   "api_status": "ok",
   "github": {
     "login": "ake123",
     "name": "ake",
     "followers": 5,
-    "public_repos": 124,
+    "public_repos": 123,
     "profile_url": "https://github.com/ake123",
     "profile_updated_at": "2026-08-24T08:28:52Z"
   },
   "repositories": [
-    {
-      "name": "ake123",
-      "description": "Open-source project",
-      "url": "https://github.com/ake123/ake123",
-      "language": null,
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-09-01T16:22:23Z"
-    },
     {
       "name": "aki",
       "description": "https://ake123.github.io/aki/",
@@ -29,16 +20,16 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-01T12:49:26Z"
+      "pushed_at": "2026-09-01T21:17:58Z"
     },
     {
-      "name": "demo",
+      "name": "ake123",
       "description": "Open-source project",
-      "url": "https://github.com/ake123/demo",
+      "url": "https://github.com/ake123/ake123",
       "language": null,
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-28T08:50:29Z"
+      "pushed_at": "2026-09-01T20:51:12Z"
     },
     {
       "name": "FinnishForestAI",
@@ -66,6 +57,15 @@
       "stars": 0,
       "forks": 0,
       "pushed_at": "2026-07-30T19:43:25Z"
+    },
+    {
+      "name": "Automated-Retrieval-and-Analysis-of-Finnish-Cultural-Metadata-with-finna",
+      "description": "Open-source project",
+      "url": "https://github.com/ake123/Automated-Retrieval-and-Analysis-of-Finnish-Cultural-Metadata-with-finna",
+      "language": "R",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-07-30T19:03:15Z"
     }
   ]
 }
