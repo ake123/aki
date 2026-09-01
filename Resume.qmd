@@ -8,8 +8,8 @@ toc: false
 For the best reading experience, open the PDF directly or view it below.
 :::
 
-[Open CV as PDF](cv/akewak-jeba-cv.pdf){.aj-btn .aj-btn-primary target="_blank"}
+[Open CV as PDF](cv/akewak-jeba-aki-cv.pdf){.aj-btn .aj-btn-primary target="_blank"}
 
-<iframe src="cv/akewak-jeba-cv.pdf" width="100%" height="950" style="border:1px solid var(--aj-line); border-radius:18px; margin-top:1.5rem; background:white;" title="Akewak Jeba CV">
+<iframe src="cv/akewak-jeba-aki-cv.pdf" width="100%" height="950" style="border:1px solid var(--aj-line); border-radius:18px; margin-top:1.5rem; background:white;" title="Akewak Jeba CV">
 
 </iframe>
