@@ -1,66 +1,162 @@
 ---
 title: "Projects"
-description: "Selected open-source, data science, and research engineering projects by Akewak Jeba."
+description: "Selected AI, open-source, data science, and research engineering projects by Akewak Jeba."
 ---
 
-::: {.page-intro}
-My projects focus on **reproducible data access, scientific software, machine learning, and research infrastructure**. I especially enjoy building the layer between difficult source systems and researchers who need clean, analyzable data.
+::: page-intro
+My projects focus on **AI-assisted research, reproducible data access, scientific software, machine learning, semantic technologies, and research infrastructure**. I especially enjoy building systems that connect complex data sources, APIs, ontologies, and computational methods with researchers who need transparent and reproducible analytical workflows.
+:::
+
+## AI & cultural heritage
+
+::: project-card
+### HeritageRAG — Evidence-grounded AI for cultural heritage research
+
+An experimental retrieval-augmented generation system designed for cultural heritage research. HeritageRAG combines structured cultural heritage data, semantic vocabularies, retrieval methods, and large language models to produce research-oriented responses grounded in retrieved evidence.
+
+The system integrates components such as **Finna, Finto/YSO, and Annif** for cultural heritage retrieval, semantic enrichment, and automated subject indexing. It also separates retrieved evidence from generated answers and preserves provenance so researchers can inspect the underlying sources.
+
+**Focus:** retrieval-augmented generation · LLMs · semantic search · cultural heritage · provenance · R · Shiny · Quarto
+:::
+
+::: project-card
+### AI-assisted reproducible analysis
+
+A methodological research framework exploring how AI systems can help researchers construct transparent computational workflows from a research question.
+
+The workflow covers data retrieval, filtering, cleaning, creation of analysis variables, statistical analysis, visualization, and reproducible reporting. AI-generated workflows can be evaluated against manually prepared reference analyses based on correctness, reproducibility, statistical appropriateness, and the amount of human correction required.
+
+**Focus:** AI agents · reproducibility · statistical workflows · evaluation · provenance · research automation
 :::
 
 ## Cultural heritage & bibliographic data
 
-::: {.project-card}
+::: project-card
 ### finna — Finna API for R
 
-An open-source R package for retrieving and analyzing cultural heritage metadata from Finland's Finna service. It provides reproducible access to records from libraries, museums, archives, and other cultural heritage organizations.
+An open-source R package for retrieving and analyzing cultural heritage metadata from Finland's Finna service. It provides reproducible programmatic access to records from libraries, museums, archives, and other cultural heritage organizations.
 
-**Focus:** API clients · metadata retrieval · reproducible workflows · digital humanities
+The package supports large-scale computational cultural heritage research by making metadata retrieval easier to integrate into reproducible R workflows.
+
+**Focus:** API clients · metadata retrieval · reproducible workflows · digital humanities · cultural heritage
 
 [Documentation](https://fennicahub.github.io/finna){.aj-btn .aj-btn-primary} [GitHub](https://github.com/fennicahub/finna){.aj-btn .aj-btn-secondary}
 :::
 
-::: {.project-card}
-### finto — Semantic vocabularies and ontologies
+::: project-card
+### finto — Semantic vocabularies and ontologies for R
 
-R tooling for accessing Finnish vocabulary and ontology services. The work supports concept lookup, multilingual metadata enrichment, semantic search, and the use of controlled vocabularies in computational research.
+R tooling for accessing Finnish vocabulary and ontology services through the Finto infrastructure.
 
-**Focus:** linked data · ontologies · multilingual metadata · semantic enrichment
+The project supports concept lookup, multilingual metadata enrichment, ontology-based exploration, semantic search, and the use of controlled vocabularies in computational research. It also provides an important semantic layer for projects such as HeritageRAG.
+
+**Focus:** linked data · ontologies · multilingual metadata · semantic enrichment · APIs · R
 :::
 
-::: {.project-card}
+::: project-card
+### annif — Automated subject indexing from R
+
+R tooling for interacting with **Annif**, an open-source automated subject indexing and classification system.
+
+The project connects automated subject indexing with reproducible R workflows and supports experimentation with semantic enrichment, controlled vocabularies, and AI-assisted metadata analysis.
+
+Annif can be combined with Finto vocabularies and cultural heritage retrieval systems to provide automated semantic indexing as part of larger research pipelines.
+
+**Focus:** automated subject indexing · NLP · controlled vocabularies · semantic enrichment · APIs · R
+:::
+
+::: project-card
 ### fennica — Finnish national bibliography workflows
 
-Tools and analysis workflows for working with Finnish national bibliography data at scale, including harmonization and computational analysis of historical publication metadata.
+Tools and computational workflows for working with Finnish national bibliography data at scale.
 
-**Focus:** bibliographic data science · metadata harmonization · cultural history · R
+The project includes metadata retrieval, harmonization, enrichment, quality assessment, and computational analysis of historical publication data. It supports research into publishing history, authorship, language, genre, and long-term transformations in Finnish literary culture.
+
+**Focus:** bibliographic data science · metadata harmonization · cultural history · large-scale data · R
 :::
 
-## Computational biology
+## Machine learning & geospatial data science
 
-::: {.project-card}
+::: project-card
+### FinnishForestAI — AI and LiDAR for forest analysis
+
+An applied geospatial data science project exploring how open Finnish laser-scanning and spatial datasets can be used for forest analysis with machine-learning and reproducible computational workflows.
+
+The project demonstrates LiDAR point-cloud processing, extraction of forest structural features, spatial analysis, visualization, and preparation of geospatial data for machine-learning applications. Both **R and Python workflows** are explored, with an emphasis on open data and reproducibility.
+
+**Focus:** LiDAR · remote sensing · geospatial data science · machine learning · forest analytics · R · Python
+
+[Live Project](https://ake123.github.io/FinnishForestAI/){.aj-btn .aj-btn-primary} [GitHub](https://github.com/ake123/FinnishForestAI){.aj-btn .aj-btn-secondary}
+:::
+
+::: project-card
+### Graph learning for microbiome research
+
+An exploratory machine-learning project investigating how microbial communities can be represented and analyzed as graphs.
+
+Microbial taxa can be represented as nodes, inferred associations as edges, and abundance or functional information as node features. Graph-learning methods can then be explored for representation learning, prediction, community structure, and biological interpretation.
+
+**Focus:** graph neural networks · microbiome · machine learning · network analysis · R · Python
+:::
+
+## Computational biology & scientific software
+
+::: project-card
 ### LimROTS
 
-A hybrid statistical method and Bioconductor package that combines empirical Bayes modeling with reproducibility-optimized statistics for robust differential expression analysis.
+A hybrid statistical method and Bioconductor package for robust differential expression analysis.
 
-**Focus:** statistical programming · proteomics · Bioconductor · reproducibility
+LimROTS combines the empirical Bayes modeling framework of **limma** with reproducibility-optimized statistics from **ROTS**, supporting complex experimental designs and biological or technical covariates.
+
+The method has been benchmarked using proteomics datasets and applied to real-world biomedical data.
+
+**Focus:** statistical programming · proteomics · differential expression · Bioconductor · reproducibility · R
 
 [Bioconductor](https://bioconductor.org/packages/LimROTS){.aj-btn .aj-btn-primary}
 :::
 
-::: {.project-card}
+::: project-card
 ### iSEEtree
 
 An interactive explorer for hierarchical biological data, developed as part of a collaborative scientific software project.
 
-**Focus:** interactive analysis · visualization · hierarchical data · Bioconductor
+The project provides interactive visualization and exploration capabilities for hierarchical structures in biological datasets and integrates with the broader Bioconductor ecosystem.
+
+**Focus:** interactive analysis · visualization · hierarchical data · Bioconductor · R
 :::
 
-## Research engineering
+## Software & research engineering
 
-::: {.project-card}
-### AI-assisted reproducible analysis
+::: project-card
+### Asynchronous data-processing APIs
 
-Methodological work exploring how AI systems can help researchers construct transparent computational workflows across data retrieval, cleaning, variable construction, statistical analysis, visualization, and reporting.
+A backend engineering project exploring scalable asynchronous processing using **FastAPI, Celery, background workers, and REST APIs**.
 
-**Focus:** AI agents · reproducibility · evaluation · statistical workflows · provenance
+The architecture separates immediate API requests from longer-running analytical jobs, making it suitable for report generation, data processing, machine-learning workloads, and AI-assisted services.
+
+**Focus:** FastAPI · Celery · Python · REST APIs · asynchronous processing · backend engineering
+:::
+
+::: project-card
+### Open-source eCommerce platform
+
+A modular eCommerce platform built around **Drupal Commerce** and modern development practices.
+
+The project explores product and order management, payment integration, responsive frontend development, SEO-friendly routing, containerized development, automated deployment, and extensible commerce architecture.
+
+**Focus:** Drupal Commerce · Docker · web development · payments · deployment · system architecture
+:::
+
+## Research direction
+
+::: project-card
+### Computational and AI-assisted methods for cultural heritage research
+
+My current research direction brings several of these projects together.
+
+The broader goal is to investigate how **data-access tools, semantic technologies, retrieval-augmented generation, and AI-assisted computational workflows** can support cultural heritage researchers while preserving transparency, reproducibility, provenance, and human oversight.
+
+Rather than treating AI as a replacement for researchers, the work investigates which stages of computational research can be reliably supported by AI and where expert judgement remains essential.
+
+**Focus:** cultural heritage · RAG · AI-assisted research · reproducibility · semantic technologies · research methodology
 :::
