@@ -4,9 +4,11 @@ project:
 
 website:
   title: "Akewak Jeba"
-  site-url: "https://ake123.github.io/akewak/"
+  site-url: "https://ake123.github.io/aki/"
   description: "Akewak Jeba — Data Scientist, AI researcher, scientific software developer, and open science advocate."
   favicon: images/ake.jpeg
+  image: images/ake.jpeg
+  image-alt: "Akewak Jeba"
   search: true
   back-to-top-navigation: true
   navbar:
@@ -51,6 +53,7 @@ format:
     toc-location: right
     smooth-scroll: true
     link-external-newwindow: true
+    include-in-header: includes/seo-head.html
     include-after-body: includes/after-body.html
 
 execute:
