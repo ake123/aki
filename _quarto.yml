@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - googlebdd221d8253ac157.html
 
 website:
   title: "Akewak Jeba"
