@@ -35,6 +35,9 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/akewak-j-ab82b528/
         aria-label: LinkedIn
+      - icon: bluesky
+        href: https://bsky.app/profile/jeba25.bsky.social
+        aria-label: Bluesky
   page-footer:
     left: |
       © <span id="footer-year">2026</span> Akewak Jeba
