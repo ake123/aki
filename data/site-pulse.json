@@ -1,8 +1,8 @@
 {
-  "last_updated_utc": "2026-10-16T22:14:22Z",
-  "last_updated_helsinki": "2026-10-17T01:14:22+03:00",
-  "refresh_number": 222,
-  "refresh_slot_utc": "22:14",
+  "last_updated_utc": "2026-10-17T06:16:36Z",
+  "last_updated_helsinki": "2026-10-17T09:16:36+03:00",
+  "refresh_number": 223,
+  "refresh_slot_utc": "06:16",
   "api_status": "ok",
   "github": {
     "login": "ake123",
@@ -20,7 +20,7 @@
       "language": null,
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-16T20:46:17Z"
+      "pushed_at": "2026-10-17T03:50:12Z"
     },
     {
       "name": "aki",
@@ -29,7 +29,7 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-16T17:43:13Z"
+      "pushed_at": "2026-10-16T22:14:50Z"
     },
     {
       "name": "dhs-reproductive-health",
