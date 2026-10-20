@@ -1,8 +1,8 @@
 {
-  "last_updated_utc": "2026-10-20T18:08:01Z",
-  "last_updated_helsinki": "2026-10-20T21:08:01+03:00",
-  "refresh_number": 236,
-  "refresh_slot_utc": "18:08",
+  "last_updated_utc": "2026-10-20T22:44:10Z",
+  "last_updated_helsinki": "2026-10-21T01:44:10+03:00",
+  "refresh_number": 237,
+  "refresh_slot_utc": "22:44",
   "api_status": "ok",
   "github": {
     "login": "ake123",
@@ -20,7 +20,7 @@
       "language": null,
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-20T16:37:58Z"
+      "pushed_at": "2026-10-20T21:25:42Z"
     },
     {
       "name": "aki",
@@ -29,7 +29,7 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-20T13:04:12Z"
+      "pushed_at": "2026-10-20T18:08:40Z"
     },
     {
       "name": "FinnishForestAI",
