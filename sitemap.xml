@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ake123.github.io/aki/contact.html</loc>
-    <lastmod>2026-10-21T13:15:42.271Z</lastmod>
+    <loc>https://ake123.github.io/aki/index.html</loc>
+    <lastmod>2026-10-21T18:16:52.152Z</lastmod>
   </url>
   <url>
     <loc>https://ake123.github.io/aki/Resume.html</loc>
-    <lastmod>2026-10-21T13:15:42.270Z</lastmod>
+    <lastmod>2026-10-21T18:16:52.129Z</lastmod>
   </url>
   <url>
     <loc>https://ake123.github.io/aki/blog.html</loc>
-    <lastmod>2026-10-21T13:15:42.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ake123.github.io/aki/posts/Bibliographic_Data_Science.html</loc>
-    <lastmod>2026-10-21T13:15:42.297Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ake123.github.io/aki/posts/microbiome-graph-learning.html</loc>
-    <lastmod>2026-10-21T13:15:42.314Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ake123.github.io/aki/index.html</loc>
-    <lastmod>2026-10-21T13:15:42.297Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ake123.github.io/aki/projects.html</loc>
-    <lastmod>2026-10-21T13:15:42.314Z</lastmod>
+    <lastmod>2026-10-21T18:16:52.130Z</lastmod>
   </url>
   <url>
     <loc>https://ake123.github.io/aki/posts/finnishforestai-lidar-blog.html</loc>
-    <lastmod>2026-10-21T13:15:42.297Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ake123.github.io/aki/posts/eCommerce.html</loc>
-    <lastmod>2026-10-21T13:15:42.297Z</lastmod>
+    <lastmod>2026-10-21T18:16:52.153Z</lastmod>
   </url>
   <url>
     <loc>https://ake123.github.io/aki/posts/LimROTS.html</loc>
-    <lastmod>2026-10-21T13:15:42.297Z</lastmod>
+    <lastmod>2026-10-21T18:16:52.153Z</lastmod>
   </url>
   <url>
-    <loc>https://ake123.github.io/aki/GITHUB-ACTIONS-SETUP.html</loc>
-    <lastmod>2026-10-21T13:15:42.270Z</lastmod>
+    <loc>https://ake123.github.io/aki/posts/eCommerce.html</loc>
+    <lastmod>2026-10-21T18:16:52.153Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ake123.github.io/aki/contact.html</loc>
+    <lastmod>2026-10-21T18:16:52.130Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ake123.github.io/aki/posts/microbiome-graph-learning.html</loc>
+    <lastmod>2026-10-21T18:16:52.166Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ake123.github.io/aki/posts/Bibliographic_Data_Science.html</loc>
+    <lastmod>2026-10-21T18:16:52.152Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ake123.github.io/aki/projects.html</loc>
+    <lastmod>2026-10-21T18:16:52.166Z</lastmod>
   </url>
   <url>
     <loc>https://ake123.github.io/aki/Publications.html</loc>
-    <lastmod>2026-10-21T13:15:42.270Z</lastmod>
+    <lastmod>2026-10-21T18:16:52.129Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ake123.github.io/aki/GITHUB-ACTIONS-SETUP.html</loc>
+    <lastmod>2026-10-21T18:16:52.129Z</lastmod>
   </url>
 </urlset>
