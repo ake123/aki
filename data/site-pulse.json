@@ -1,18 +1,27 @@
 {
-  "last_updated_utc": "2026-11-01T19:14:35Z",
-  "last_updated_helsinki": "2026-11-01T21:14:35+02:00",
-  "refresh_number": 277,
-  "refresh_slot_utc": "19:14",
+  "last_updated_utc": "2026-11-01T23:58:14Z",
+  "last_updated_helsinki": "2026-11-02T01:58:14+02:00",
+  "refresh_number": 278,
+  "refresh_slot_utc": "23:58",
   "api_status": "ok",
   "github": {
     "login": "ake123",
     "name": "ake",
     "followers": 6,
-    "public_repos": 128,
+    "public_repos": 129,
     "profile_url": "https://github.com/ake123",
     "profile_updated_at": "2026-08-24T08:28:52Z"
   },
   "repositories": [
+    {
+      "name": "heritageRAG-report",
+      "description": "Open-source project",
+      "url": "https://github.com/ake123/heritageRAG-report",
+      "language": "R",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-11-01T21:56:31Z"
+    },
     {
       "name": "ake123",
       "description": "Open-source project",
@@ -20,7 +29,7 @@
       "language": null,
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-11-01T12:58:13Z"
+      "pushed_at": "2026-11-01T21:52:43Z"
     },
     {
       "name": "aki",
@@ -29,7 +38,7 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-11-01T09:48:29Z"
+      "pushed_at": "2026-11-01T19:15:02Z"
     },
     {
       "name": "ai-product-studio",
@@ -57,15 +66,6 @@
       "stars": 0,
       "forks": 0,
       "pushed_at": "2026-07-30T19:03:15Z"
-    },
-    {
-      "name": "QR_code",
-      "description": "Open-source project",
-      "url": "https://github.com/ake123/QR_code",
-      "language": "Python",
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2025-10-24T13:46:10Z"
     }
   ]
 }
