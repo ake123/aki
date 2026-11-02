@@ -1,8 +1,8 @@
 {
-  "last_updated_utc": "2026-11-02T10:06:03Z",
-  "last_updated_helsinki": "2026-11-02T12:06:03+02:00",
-  "refresh_number": 279,
-  "refresh_slot_utc": "10:06",
+  "last_updated_utc": "2026-11-02T22:54:55Z",
+  "last_updated_helsinki": "2026-11-03T00:54:55+02:00",
+  "refresh_number": 280,
+  "refresh_slot_utc": "22:54",
   "api_status": "ok",
   "github": {
     "login": "ake123",
@@ -14,22 +14,13 @@
   },
   "repositories": [
     {
-      "name": "heritageRAG-report",
-      "description": "Open-source project",
-      "url": "https://github.com/ake123/heritageRAG-report",
-      "language": "R",
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-11-02T08:18:44Z"
-    },
-    {
       "name": "ake123",
       "description": "Open-source project",
       "url": "https://github.com/ake123/ake123",
       "language": null,
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-11-02T05:23:59Z"
+      "pushed_at": "2026-11-02T15:17:34Z"
     },
     {
       "name": "aki",
@@ -38,7 +29,16 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-11-01T23:58:39Z"
+      "pushed_at": "2026-11-02T10:06:27Z"
+    },
+    {
+      "name": "heritageRAG-report",
+      "description": "Open-source project",
+      "url": "https://github.com/ake123/heritageRAG-report",
+      "language": "R",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-11-02T08:18:44Z"
     },
     {
       "name": "ai-product-studio",
