@@ -1,8 +1,8 @@
 {
-  "last_updated_utc": "2026-11-10T21:03:13Z",
-  "last_updated_helsinki": "2026-11-10T23:03:13+02:00",
-  "refresh_number": 300,
-  "refresh_slot_utc": "21:03",
+  "last_updated_utc": "2026-11-11T09:54:45Z",
+  "last_updated_helsinki": "2026-11-11T11:54:45+02:00",
+  "refresh_number": 301,
+  "refresh_slot_utc": "09:54",
   "api_status": "ok",
   "github": {
     "login": "ake123",
@@ -20,7 +20,7 @@
       "language": null,
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-11-10T14:38:22Z"
+      "pushed_at": "2026-11-11T05:35:47Z"
     },
     {
       "name": "aki",
@@ -29,7 +29,7 @@
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-11-10T10:31:27Z"
+      "pushed_at": "2026-11-10T21:03:42Z"
     },
     {
       "name": "heritageRAG-report",
